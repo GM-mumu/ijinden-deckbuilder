@@ -1,4 +1,4 @@
-const CACHE_VERSION = "ijinden-v0.5.0";
+const CACHE_VERSION = "ijinden-v0.6.0";
 const SHELL_CACHE = `${CACHE_VERSION}-shell`;
 const RUNTIME_CACHE = `${CACHE_VERSION}-runtime`;
 
