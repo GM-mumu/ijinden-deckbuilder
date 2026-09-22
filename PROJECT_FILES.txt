@@ -1,0 +1,12 @@
+イジンデン デッキビルダー v0.3
+
+src/App.tsx                         メインUI / レスポンシブ検索 / デッキ
+src/styles.css                      PC・タブレット・スマホ共通CSS
+src/components/CardDetail.tsx       カード詳細
+src/types/card.ts                   カード型
+src/types/semantic.ts               Semantic / purpose-index 型
+src/lib/storage.ts                  localStorage
+public/data/cards.json              Canonical card DB
+public/data/reverse-index.json      Semantic reverse index
+public/data/purpose-index.json      やりたいこと目的検索 index
+README.md                           起動・設計説明

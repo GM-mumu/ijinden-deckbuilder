@@ -1,0 +1,4741 @@
+{
+  "schemaVersion": "0.1",
+  "cardCount": 576,
+  "categories": [
+    {
+      "id": "win",
+      "label": "勝ち筋",
+      "leaves": [
+        {
+          "id": "win.special_outcome",
+          "label": "特殊勝利／特殊敗北",
+          "count": 4,
+          "cardIds": [
+            "S01-ROW055",
+            "S02-ROW005",
+            "S04-ROW037",
+            "S04-ROW047"
+          ]
+        },
+        {
+          "id": "win.deck_attack",
+          "label": "山札攻め",
+          "count": 10,
+          "cardIds": [
+            "S03-ROW011",
+            "S03-ROW070",
+            "S03-ROW093",
+            "S04-ROW010",
+            "S04-ROW036",
+            "S04-ROW039",
+            "S04-ROW040",
+            "S05-ROW057",
+            "S05-ROW075",
+            "S05-ROW090"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "attack",
+      "label": "攻撃",
+      "leaves": [
+        {
+          "id": "attack.quick",
+          "label": "すぐ攻撃する｜即応",
+          "count": 35,
+          "cardIds": [
+            "S01-ROW002",
+            "S01-ROW008",
+            "S01-ROW009",
+            "S01-ROW015",
+            "S01-ROW020",
+            "S01-ROW021",
+            "S01-ROW047",
+            "S01-ROW049",
+            "S01-ROW083",
+            "S01-ROW088",
+            "S01-ROW089",
+            "S02-ROW004",
+            "S02-ROW009",
+            "S02-ROW014",
+            "S02-ROW016",
+            "S02-ROW024",
+            "S02-ROW038",
+            "S02-ROW045",
+            "S02-ROW084",
+            "S02-ROW085",
+            "S03-ROW017",
+            "S03-ROW047",
+            "S03-ROW077",
+            "S03-ROW089",
+            "S04-ROW010",
+            "S04-ROW018",
+            "S05-ROW014",
+            "S05-ROW020",
+            "S05-ROW023",
+            "S05-ROW060",
+            "S06-ROW008",
+            "S06-ROW013",
+            "S06-ROW027",
+            "S06-ROW030",
+            "S06-ROW044"
+          ]
+        },
+        {
+          "id": "attack.unblockable",
+          "label": "攻撃を通しやすくする｜ブロック不能",
+          "count": 15,
+          "cardIds": [
+            "S01-ROW005",
+            "S01-ROW048",
+            "S01-ROW054",
+            "S01-ROW072",
+            "S01-ROW097",
+            "S01-ROW102",
+            "S02-ROW047",
+            "S04-ROW014",
+            "S04-ROW044",
+            "S05-ROW005",
+            "S05-ROW051",
+            "S06-ROW009",
+            "S06-ROW024",
+            "S06-ROW034",
+            "S06-ROW042"
+          ]
+        },
+        {
+          "id": "attack.pressure",
+          "label": "攻撃を通しやすくする｜プレッシャー系",
+          "count": 38,
+          "cardIds": [
+            "S01-ROW002",
+            "S01-ROW005",
+            "S01-ROW020",
+            "S01-ROW031",
+            "S01-ROW071",
+            "S01-ROW080",
+            "S01-ROW086",
+            "S01-ROW101",
+            "S02-ROW003",
+            "S02-ROW015",
+            "S02-ROW016",
+            "S02-ROW049",
+            "S02-ROW086",
+            "S02-ROW087",
+            "S03-ROW002",
+            "S03-ROW005",
+            "S03-ROW047",
+            "S03-ROW071",
+            "S03-ROW077",
+            "S04-ROW024",
+            "S05-ROW002",
+            "S05-ROW005",
+            "S05-ROW010",
+            "S05-ROW012",
+            "S05-ROW025",
+            "S05-ROW028",
+            "S05-ROW035",
+            "S05-ROW037",
+            "S05-ROW045",
+            "S05-ROW050",
+            "S05-ROW111",
+            "S06-ROW008",
+            "S06-ROW013",
+            "S06-ROW015",
+            "S06-ROW030",
+            "S06-ROW033",
+            "S06-ROW034",
+            "S06-ROW041"
+          ]
+        },
+        {
+          "id": "attack.extra_battle",
+          "label": "連続して攻める｜追加バトル",
+          "count": 2,
+          "cardIds": [
+            "S01-ROW055",
+            "S02-ROW009"
+          ]
+        },
+        {
+          "id": "attack.mortal",
+          "label": "連続して攻める｜モータル",
+          "count": 2,
+          "cardIds": [
+            "S04-ROW002",
+            "S04-ROW010"
+          ]
+        },
+        {
+          "id": "attack.ready",
+          "label": "連続して攻める｜起こす",
+          "count": 11,
+          "cardIds": [
+            "S01-ROW021",
+            "S01-ROW077",
+            "S01-ROW108",
+            "S01-ROW110",
+            "S01-ROW112",
+            "S01-ROW114",
+            "S01-ROW117",
+            "S03-ROW027",
+            "S03-ROW034",
+            "S04-ROW024",
+            "S05-ROW070"
+          ]
+        },
+        {
+          "id": "attack.attack_plus",
+          "label": "打点・戦闘力を上げる｜アタック+",
+          "count": 27,
+          "cardIds": [
+            "S01-ROW012",
+            "S01-ROW015",
+            "S01-ROW017",
+            "S01-ROW060",
+            "S01-ROW061",
+            "S01-ROW084",
+            "S01-ROW105",
+            "S01-ROW110",
+            "S02-ROW012",
+            "S02-ROW015",
+            "S02-ROW043",
+            "S02-ROW083",
+            "S02-ROW084",
+            "S03-ROW002",
+            "S03-ROW053",
+            "S03-ROW063",
+            "S03-ROW071",
+            "S04-ROW002",
+            "S04-ROW013",
+            "S04-ROW017",
+            "S05-ROW002",
+            "S05-ROW008",
+            "S05-ROW016",
+            "S05-ROW018",
+            "S05-ROW042",
+            "S05-ROW111",
+            "S06-ROW014"
+          ]
+        },
+        {
+          "id": "attack.power_plus",
+          "label": "打点・戦闘力を上げる｜パワー+",
+          "count": 35,
+          "cardIds": [
+            "S01-ROW004",
+            "S01-ROW014",
+            "S01-ROW029",
+            "S01-ROW036",
+            "S01-ROW041",
+            "S01-ROW068",
+            "S01-ROW075",
+            "S01-ROW077",
+            "S01-ROW091",
+            "S01-ROW100",
+            "S01-ROW101",
+            "S01-ROW117",
+            "S02-ROW003",
+            "S02-ROW019",
+            "S02-ROW026",
+            "S02-ROW031",
+            "S02-ROW038",
+            "S02-ROW044",
+            "S02-ROW045",
+            "S02-ROW055",
+            "S02-ROW074",
+            "S03-ROW006",
+            "S03-ROW067",
+            "S03-ROW089",
+            "S03-ROW096",
+            "S04-ROW035",
+            "S05-ROW022",
+            "S05-ROW052",
+            "S05-ROW060",
+            "S05-ROW070",
+            "S06-ROW013",
+            "S06-ROW016",
+            "S06-ROW019",
+            "S06-ROW036",
+            "S06-ROW045"
+          ]
+        },
+        {
+          "id": "attack.guardian_remove",
+          "label": "ブロッカーを無力化する｜ガーディアン除去",
+          "count": 11,
+          "cardIds": [
+            "S01-ROW029",
+            "S01-ROW081",
+            "S02-ROW004",
+            "S03-ROW061",
+            "S04-ROW004",
+            "S04-ROW025",
+            "S04-ROW041",
+            "S04-ROW059",
+            "S04-ROW067",
+            "S05-ROW053",
+            "S05-ROW060"
+          ]
+        },
+        {
+          "id": "attack.guardian_sleep",
+          "label": "ブロッカーを無力化する｜ガーディアンを寝かせる",
+          "count": 3,
+          "cardIds": [
+            "S01-ROW025",
+            "S02-ROW086",
+            "S05-ROW004"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "defense",
+      "label": "防御",
+      "leaves": [
+        {
+          "id": "defense.watcher",
+          "label": "ブロックしやすくする｜ウォッチャー",
+          "count": 23,
+          "cardIds": [
+            "S02-ROW007",
+            "S02-ROW024",
+            "S02-ROW038",
+            "S02-ROW044",
+            "S02-ROW045",
+            "S02-ROW048",
+            "S02-ROW049",
+            "S02-ROW054",
+            "S02-ROW083",
+            "S02-ROW084",
+            "S02-ROW085",
+            "S03-ROW040",
+            "S03-ROW051",
+            "S03-ROW069",
+            "S04-ROW009",
+            "S04-ROW018",
+            "S04-ROW035",
+            "S05-ROW042",
+            "S05-ROW047",
+            "S05-ROW048",
+            "S06-ROW028",
+            "S06-ROW037",
+            "S06-ROW039"
+          ]
+        },
+        {
+          "id": "defense.block_plus",
+          "label": "ブロックしやすくする｜ブロック+",
+          "count": 17,
+          "cardIds": [
+            "S01-ROW025",
+            "S01-ROW064",
+            "S01-ROW074",
+            "S02-ROW011",
+            "S02-ROW012",
+            "S02-ROW021",
+            "S02-ROW024",
+            "S02-ROW036",
+            "S03-ROW020",
+            "S03-ROW025",
+            "S03-ROW054",
+            "S03-ROW065",
+            "S03-ROW069",
+            "S04-ROW022",
+            "S05-ROW031",
+            "S06-ROW031",
+            "S06-ROW039"
+          ]
+        },
+        {
+          "id": "defense.ready",
+          "label": "ブロックしやすくする｜起こす",
+          "count": 7,
+          "cardIds": [
+            "S01-ROW108",
+            "S01-ROW114",
+            "S01-ROW117",
+            "S03-ROW027",
+            "S03-ROW034",
+            "S04-ROW024",
+            "S05-ROW070"
+          ]
+        },
+        {
+          "id": "defense.guardian_generate",
+          "label": "ブロッカーを増やす｜ガーディアン生成",
+          "count": 14,
+          "cardIds": [
+            "S01-ROW028",
+            "S01-ROW030",
+            "S01-ROW031",
+            "S01-ROW032",
+            "S01-ROW119",
+            "S02-ROW007",
+            "S02-ROW014",
+            "S02-ROW033",
+            "S02-ROW036",
+            "S02-ROW056",
+            "S02-ROW061",
+            "S02-ROW065",
+            "S02-ROW087",
+            "S02-ROW089"
+          ]
+        },
+        {
+          "id": "defense.enemy_sleep",
+          "label": "相手の戦闘力を下げる｜相手を寝かせる",
+          "count": 7,
+          "cardIds": [
+            "S01-ROW025",
+            "S02-ROW086",
+            "S05-ROW004",
+            "S05-ROW025",
+            "S05-ROW026",
+            "S06-ROW007",
+            "S06-ROW020"
+          ]
+        },
+        {
+          "id": "defense.power_minus",
+          "label": "相手の戦闘力を下げる｜パワー-",
+          "count": 5,
+          "cardIds": [
+            "S06-ROW017",
+            "S06-ROW025",
+            "S06-ROW032",
+            "S06-ROW043",
+            "S06-ROW049"
+          ]
+        },
+        {
+          "id": "defense.indestructible",
+          "label": "自軍を守る｜破壊されない",
+          "count": 9,
+          "cardIds": [
+            "S01-ROW046",
+            "S01-ROW105",
+            "S02-ROW006",
+            "S02-ROW013",
+            "S02-ROW017",
+            "S03-ROW054",
+            "S04-ROW004",
+            "S06-ROW038",
+            "S06-ROW051"
+          ]
+        },
+        {
+          "id": "defense.effect_indestructible",
+          "label": "自軍を守る｜能力によって破壊されない",
+          "count": 3,
+          "cardIds": [
+            "S02-ROW017",
+            "S03-ROW054",
+            "S06-ROW051"
+          ]
+        },
+        {
+          "id": "defense.cannot_leave",
+          "label": "自軍を守る｜能力によって戦場を離れない",
+          "count": 3,
+          "cardIds": [
+            "S02-ROW017",
+            "S03-ROW052",
+            "S04-ROW079"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "board",
+      "label": "盤面干渉",
+      "leaves": [
+        {
+          "id": "board.destroy",
+          "label": "場からどかす｜破壊する",
+          "count": 40,
+          "cardIds": [
+            "S01-ROW003",
+            "S01-ROW010",
+            "S01-ROW014",
+            "S01-ROW019",
+            "S01-ROW071",
+            "S01-ROW082",
+            "S01-ROW085",
+            "S01-ROW089",
+            "S01-ROW092",
+            "S01-ROW102",
+            "S02-ROW018",
+            "S03-ROW002",
+            "S03-ROW003",
+            "S03-ROW008",
+            "S03-ROW013",
+            "S03-ROW018",
+            "S03-ROW061",
+            "S03-ROW062",
+            "S04-ROW017",
+            "S04-ROW034",
+            "S04-ROW041",
+            "S04-ROW048",
+            "S04-ROW051",
+            "S04-ROW062",
+            "S04-ROW067",
+            "S05-ROW003",
+            "S05-ROW010",
+            "S05-ROW013",
+            "S05-ROW017",
+            "S05-ROW018",
+            "S05-ROW020",
+            "S05-ROW042",
+            "S05-ROW058",
+            "S05-ROW060",
+            "S05-ROW075",
+            "S05-ROW112",
+            "S06-ROW002",
+            "S06-ROW003",
+            "S06-ROW014",
+            "S06-ROW050"
+          ]
+        },
+        {
+          "id": "board.to_hand",
+          "label": "場からどかす｜手札へ戻す",
+          "count": 10,
+          "cardIds": [
+            "S02-ROW004",
+            "S02-ROW039",
+            "S02-ROW063",
+            "S03-ROW007",
+            "S03-ROW021",
+            "S03-ROW061",
+            "S04-ROW004",
+            "S04-ROW059",
+            "S05-ROW027",
+            "S05-ROW053"
+          ]
+        },
+        {
+          "id": "board.to_deck",
+          "label": "場からどかす｜山札へ戻す",
+          "count": 6,
+          "cardIds": [
+            "S03-ROW009",
+            "S03-ROW038",
+            "S03-ROW041",
+            "S03-ROW042",
+            "S04-ROW032",
+            "S04-ROW039"
+          ]
+        },
+        {
+          "id": "board.to_magic",
+          "label": "場からどかす｜魔力ゾーンへ送る",
+          "count": 5,
+          "cardIds": [
+            "S01-ROW007",
+            "S01-ROW081",
+            "S03-ROW028",
+            "S05-ROW007",
+            "S05-ROW083"
+          ]
+        },
+        {
+          "id": "board.sleep",
+          "label": "行動しにくくする｜寝かせる",
+          "count": 11,
+          "cardIds": [
+            "S01-ROW025",
+            "S01-ROW033",
+            "S02-ROW051",
+            "S02-ROW086",
+            "S04-ROW021",
+            "S04-ROW022",
+            "S05-ROW004",
+            "S05-ROW025",
+            "S05-ROW026",
+            "S06-ROW007",
+            "S06-ROW020"
+          ]
+        },
+        {
+          "id": "board.stay_asleep",
+          "label": "行動しにくくする｜起きなくする",
+          "count": 1,
+          "cardIds": [
+            "S02-ROW071"
+          ]
+        },
+        {
+          "id": "board.lose_abilities",
+          "label": "カードを無力化する｜能力を失わせる",
+          "count": 10,
+          "cardIds": [
+            "S01-ROW006",
+            "S02-ROW004",
+            "S02-ROW046",
+            "S03-ROW032",
+            "S04-ROW006",
+            "S04-ROW021",
+            "S04-ROW050",
+            "S05-ROW006",
+            "S05-ROW019",
+            "S05-ROW039"
+          ]
+        },
+        {
+          "id": "board.prevent_activation",
+          "label": "カードを無力化する｜特定能力を発動させない",
+          "count": 18,
+          "cardIds": [
+            "S01-ROW026",
+            "S01-ROW039",
+            "S01-ROW100",
+            "S02-ROW027",
+            "S02-ROW039",
+            "S03-ROW005",
+            "S03-ROW006",
+            "S03-ROW059",
+            "S03-ROW060",
+            "S03-ROW062",
+            "S04-ROW034",
+            "S05-ROW021",
+            "S05-ROW022",
+            "S05-ROW102",
+            "S05-ROW103",
+            "S05-ROW104",
+            "S05-ROW105",
+            "S05-ROW106"
+          ]
+        },
+        {
+          "id": "board.guardianize",
+          "label": "状態・役割を変える｜ガーディアン化",
+          "count": 3,
+          "cardIds": [
+            "S01-ROW039",
+            "S02-ROW052",
+            "S02-ROW069"
+          ]
+        },
+        {
+          "id": "board.face_down",
+          "label": "状態・役割を変える｜裏向き化",
+          "count": 5,
+          "cardIds": [
+            "S01-ROW026",
+            "S02-ROW052",
+            "S03-ROW028",
+            "S04-ROW011",
+            "S04-ROW082"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "interference",
+      "label": "妨害",
+      "leaves": [
+        {
+          "id": "interference.prevent_activation",
+          "label": "能力を封じる｜能力を発動させない",
+          "count": 18,
+          "cardIds": [
+            "S01-ROW026",
+            "S01-ROW039",
+            "S01-ROW100",
+            "S02-ROW027",
+            "S02-ROW039",
+            "S03-ROW005",
+            "S03-ROW006",
+            "S03-ROW059",
+            "S03-ROW060",
+            "S03-ROW062",
+            "S04-ROW034",
+            "S05-ROW021",
+            "S05-ROW022",
+            "S05-ROW102",
+            "S05-ROW103",
+            "S05-ROW104",
+            "S05-ROW105",
+            "S05-ROW106"
+          ]
+        },
+        {
+          "id": "interference.lose_abilities",
+          "label": "能力を封じる｜能力を失わせる",
+          "count": 10,
+          "cardIds": [
+            "S01-ROW006",
+            "S02-ROW004",
+            "S02-ROW046",
+            "S03-ROW032",
+            "S04-ROW006",
+            "S04-ROW021",
+            "S04-ROW050",
+            "S05-ROW006",
+            "S05-ROW019",
+            "S05-ROW039"
+          ]
+        },
+        {
+          "id": "interference.prevent_gain",
+          "label": "能力を封じる｜特定能力を得られなくする",
+          "count": 1,
+          "cardIds": [
+            "S02-ROW004"
+          ]
+        },
+        {
+          "id": "interference.limit_magic_haikei",
+          "label": "行動を制限する｜マホウ／ハイケイ使用を制限",
+          "count": 3,
+          "cardIds": [
+            "S01-ROW004",
+            "S05-ROW009",
+            "S06-ROW021"
+          ]
+        },
+        {
+          "id": "interference.no_battle",
+          "label": "行動を制限する｜バトルできなくする",
+          "count": 3,
+          "cardIds": [
+            "S02-ROW027",
+            "S04-ROW073",
+            "S04-ROW075"
+          ]
+        },
+        {
+          "id": "interference.limit_maryoku_place",
+          "label": "行動を制限する｜マリョク配置を制限",
+          "count": 1,
+          "cardIds": [
+            "S02-ROW019"
+          ]
+        },
+        {
+          "id": "interference.no_extra_rights",
+          "label": "行動権・コストを縛る｜召喚権／配置権を増やさせない",
+          "count": 2,
+          "cardIds": [
+            "S03-ROW019",
+            "S05-ROW043"
+          ]
+        },
+        {
+          "id": "interference.magic_cost_up",
+          "label": "行動権・コストを縛る｜マホウの魔力コストを増やす",
+          "count": 1,
+          "cardIds": [
+            "S06-ROW021"
+          ]
+        },
+        {
+          "id": "interference.ban_grave_to_field",
+          "label": "リソース利用を封じる｜墓地→戦場を禁止",
+          "count": 1,
+          "cardIds": [
+            "S01-ROW042"
+          ]
+        },
+        {
+          "id": "interference.ban_grave_to_hand",
+          "label": "リソース利用を封じる｜墓地→手札を禁止",
+          "count": 1,
+          "cardIds": [
+            "S01-ROW045"
+          ]
+        },
+        {
+          "id": "interference.no_draw",
+          "label": "リソース利用を封じる｜ドローを禁止",
+          "count": 1,
+          "cardIds": [
+            "S06-ROW010"
+          ]
+        },
+        {
+          "id": "interference.hand_discard",
+          "label": "相手のリソースを削る｜手札を墓地へ送る",
+          "count": 15,
+          "cardIds": [
+            "S01-ROW027",
+            "S01-ROW098",
+            "S02-ROW021",
+            "S02-ROW023",
+            "S03-ROW011",
+            "S03-ROW044",
+            "S03-ROW048",
+            "S03-ROW083",
+            "S04-ROW055",
+            "S04-ROW061",
+            "S05-ROW029",
+            "S05-ROW030",
+            "S05-ROW071",
+            "S05-ROW089",
+            "S06-ROW046"
+          ]
+        },
+        {
+          "id": "interference.maryoku_face_down",
+          "label": "相手のリソースを削る｜マリョクを裏向きにする",
+          "count": 1,
+          "cardIds": [
+            "S01-ROW026"
+          ]
+        },
+        {
+          "id": "interference.enter_sleeping",
+          "label": "展開を遅らせる｜寝た状態で戦場に出させる",
+          "count": 3,
+          "cardIds": [
+            "S01-ROW074",
+            "S02-ROW046",
+            "S04-ROW006"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "deploy",
+      "label": "展開",
+      "leaves": [
+        {
+          "id": "deploy.hand_to_field",
+          "label": "戦場のカードを増やす｜手札→戦場",
+          "count": 12,
+          "cardIds": [
+            "S03-ROW006",
+            "S03-ROW028",
+            "S03-ROW030",
+            "S03-ROW045",
+            "S03-ROW046",
+            "S03-ROW057",
+            "S03-ROW083",
+            "S03-ROW088",
+            "S04-ROW019",
+            "S04-ROW034",
+            "S06-ROW011",
+            "S06-ROW076"
+          ]
+        },
+        {
+          "id": "deploy.deck_to_field",
+          "label": "戦場のカードを増やす｜山札→戦場",
+          "count": 15,
+          "cardIds": [
+            "S01-ROW028",
+            "S01-ROW030",
+            "S01-ROW119",
+            "S02-ROW007",
+            "S02-ROW014",
+            "S02-ROW036",
+            "S02-ROW055",
+            "S02-ROW056",
+            "S02-ROW061",
+            "S02-ROW065",
+            "S02-ROW089",
+            "S03-ROW050",
+            "S04-ROW038",
+            "S05-ROW085",
+            "S06-ROW022"
+          ]
+        },
+        {
+          "id": "deploy.grave_to_field",
+          "label": "戦場のカードを増やす｜墓地→戦場",
+          "count": 26,
+          "cardIds": [
+            "S01-ROW032",
+            "S01-ROW042",
+            "S02-ROW002",
+            "S02-ROW008",
+            "S02-ROW022",
+            "S02-ROW028",
+            "S02-ROW034",
+            "S02-ROW042",
+            "S02-ROW082",
+            "S03-ROW003",
+            "S03-ROW006",
+            "S03-ROW020",
+            "S03-ROW028",
+            "S03-ROW030",
+            "S03-ROW036",
+            "S03-ROW039",
+            "S03-ROW045",
+            "S03-ROW057",
+            "S03-ROW083",
+            "S03-ROW088",
+            "S04-ROW006",
+            "S04-ROW016",
+            "S04-ROW019",
+            "S04-ROW034",
+            "S04-ROW038",
+            "S05-ROW087"
+          ]
+        },
+        {
+          "id": "deploy.magic_to_field",
+          "label": "戦場のカードを増やす｜魔力ゾーン→戦場",
+          "count": 3,
+          "cardIds": [
+            "S01-ROW031",
+            "S02-ROW087",
+            "S05-ROW024"
+          ]
+        },
+        {
+          "id": "deploy.guardian_generate",
+          "label": "戦場のカードを増やす｜ガーディアン生成",
+          "count": 14,
+          "cardIds": [
+            "S01-ROW028",
+            "S01-ROW030",
+            "S01-ROW031",
+            "S01-ROW032",
+            "S01-ROW119",
+            "S02-ROW007",
+            "S02-ROW014",
+            "S02-ROW033",
+            "S02-ROW036",
+            "S02-ROW056",
+            "S02-ROW061",
+            "S02-ROW065",
+            "S02-ROW087",
+            "S02-ROW089"
+          ]
+        },
+        {
+          "id": "deploy.summon_right",
+          "label": "行動回数を増やす｜イジン召喚権+",
+          "count": 35,
+          "cardIds": [
+            "S01-ROW005",
+            "S01-ROW011",
+            "S01-ROW017",
+            "S01-ROW034",
+            "S01-ROW046",
+            "S01-ROW076",
+            "S01-ROW087",
+            "S02-ROW010",
+            "S02-ROW022",
+            "S02-ROW029",
+            "S02-ROW030",
+            "S02-ROW037",
+            "S02-ROW047",
+            "S02-ROW051",
+            "S02-ROW053",
+            "S02-ROW060",
+            "S03-ROW007",
+            "S03-ROW010",
+            "S03-ROW035",
+            "S03-ROW038",
+            "S03-ROW059",
+            "S03-ROW082",
+            "S03-ROW092",
+            "S04-ROW012",
+            "S04-ROW032",
+            "S04-ROW060",
+            "S05-ROW028",
+            "S05-ROW035",
+            "S05-ROW038",
+            "S05-ROW044",
+            "S05-ROW062",
+            "S05-ROW074",
+            "S06-ROW006",
+            "S06-ROW014",
+            "S06-ROW038"
+          ]
+        },
+        {
+          "id": "deploy.maryoku_right",
+          "label": "行動回数を増やす｜マリョク配置権+",
+          "count": 12,
+          "cardIds": [
+            "S01-ROW050",
+            "S02-ROW010",
+            "S02-ROW022",
+            "S02-ROW042",
+            "S02-ROW066",
+            "S03-ROW015",
+            "S03-ROW033",
+            "S03-ROW092",
+            "S03-ROW093",
+            "S04-ROW007",
+            "S05-ROW074",
+            "S06-ROW006"
+          ]
+        },
+        {
+          "id": "deploy.lower_ijin_level",
+          "label": "出しやすくする｜イジン召喚レベルを下げる",
+          "count": 16,
+          "cardIds": [
+            "S02-ROW009",
+            "S02-ROW038",
+            "S03-ROW009",
+            "S03-ROW018",
+            "S03-ROW019",
+            "S04-ROW009",
+            "S04-ROW011",
+            "S04-ROW012",
+            "S04-ROW034",
+            "S04-ROW046",
+            "S04-ROW068",
+            "S04-ROW070",
+            "S04-ROW072",
+            "S04-ROW074",
+            "S04-ROW076",
+            "S04-ROW082"
+          ]
+        },
+        {
+          "id": "deploy.lower_use_level",
+          "label": "出しやすくする｜ハイケイ／マホウ使用レベルを下げる",
+          "count": 2,
+          "cardIds": [
+            "S03-ROW064",
+            "S04-ROW047"
+          ]
+        },
+        {
+          "id": "deploy.ignore_color",
+          "label": "出しやすくする｜色条件を無視／緩和",
+          "count": 2,
+          "cardIds": [
+            "S04-ROW007",
+            "S06-ROW072"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "magic",
+      "label": "魔力",
+      "leaves": [
+        {
+          "id": "magic.deck_to_zone",
+          "label": "魔力ゾーンを増やす｜山札→魔力ゾーン",
+          "count": 19,
+          "cardIds": [
+            "S01-ROW080",
+            "S01-ROW109",
+            "S01-ROW118",
+            "S02-ROW008",
+            "S03-ROW030",
+            "S03-ROW031",
+            "S03-ROW058",
+            "S03-ROW072",
+            "S03-ROW073",
+            "S03-ROW074",
+            "S03-ROW075",
+            "S03-ROW076",
+            "S04-ROW028",
+            "S04-ROW037",
+            "S05-ROW032",
+            "S05-ROW034",
+            "S06-ROW047",
+            "S06-ROW060",
+            "S06-ROW071"
+          ]
+        },
+        {
+          "id": "magic.field_to_zone",
+          "label": "魔力ゾーンを増やす｜戦場→魔力ゾーン",
+          "count": 11,
+          "cardIds": [
+            "S01-ROW017",
+            "S01-ROW060",
+            "S01-ROW061",
+            "S01-ROW064",
+            "S01-ROW065",
+            "S01-ROW068",
+            "S01-ROW069",
+            "S02-ROW065",
+            "S02-ROW072",
+            "S04-ROW064",
+            "S05-ROW064"
+          ]
+        },
+        {
+          "id": "magic.grave_to_zone",
+          "label": "魔力ゾーンを増やす｜墓地→魔力ゾーン",
+          "count": 126,
+          "cardIds": [
+            "S01-ROW007",
+            "S01-ROW023",
+            "S01-ROW033",
+            "S01-ROW036",
+            "S01-ROW038",
+            "S01-ROW047",
+            "S01-ROW050",
+            "S01-ROW051",
+            "S01-ROW061",
+            "S01-ROW062",
+            "S01-ROW065",
+            "S01-ROW066",
+            "S01-ROW069",
+            "S01-ROW070",
+            "S01-ROW083",
+            "S01-ROW090",
+            "S01-ROW091",
+            "S01-ROW094",
+            "S01-ROW107",
+            "S01-ROW115",
+            "S01-ROW117",
+            "S01-ROW119",
+            "S01-ROW120",
+            "S02-ROW004",
+            "S02-ROW005",
+            "S02-ROW010",
+            "S02-ROW013",
+            "S02-ROW037",
+            "S02-ROW039",
+            "S02-ROW050",
+            "S02-ROW054",
+            "S02-ROW064",
+            "S02-ROW065",
+            "S02-ROW074",
+            "S02-ROW075",
+            "S02-ROW076",
+            "S02-ROW077",
+            "S02-ROW078",
+            "S02-ROW079",
+            "S02-ROW080",
+            "S02-ROW081",
+            "S02-ROW084",
+            "S02-ROW094",
+            "S03-ROW007",
+            "S03-ROW009",
+            "S03-ROW035",
+            "S03-ROW040",
+            "S03-ROW051",
+            "S03-ROW062",
+            "S03-ROW063",
+            "S03-ROW065",
+            "S03-ROW067",
+            "S03-ROW069",
+            "S03-ROW071",
+            "S03-ROW072",
+            "S03-ROW073",
+            "S03-ROW074",
+            "S03-ROW075",
+            "S03-ROW076",
+            "S03-ROW077",
+            "S03-ROW080",
+            "S03-ROW081",
+            "S03-ROW084",
+            "S03-ROW093",
+            "S03-ROW096",
+            "S03-ROW097",
+            "S03-ROW098",
+            "S04-ROW003",
+            "S04-ROW008",
+            "S04-ROW009",
+            "S04-ROW047",
+            "S04-ROW056",
+            "S04-ROW057",
+            "S04-ROW060",
+            "S04-ROW073",
+            "S04-ROW075",
+            "S04-ROW078",
+            "S04-ROW079",
+            "S04-ROW080",
+            "S04-ROW081",
+            "S05-ROW021",
+            "S05-ROW035",
+            "S05-ROW039",
+            "S05-ROW040",
+            "S05-ROW061",
+            "S05-ROW063",
+            "S05-ROW064",
+            "S05-ROW068",
+            "S05-ROW069",
+            "S05-ROW070",
+            "S05-ROW085",
+            "S05-ROW089",
+            "S05-ROW090",
+            "S05-ROW091",
+            "S05-ROW092",
+            "S05-ROW093",
+            "S05-ROW094",
+            "S05-ROW095",
+            "S05-ROW096",
+            "S05-ROW097",
+            "S05-ROW098",
+            "S05-ROW099",
+            "S05-ROW100",
+            "S05-ROW101",
+            "S05-ROW102",
+            "S05-ROW103",
+            "S05-ROW104",
+            "S05-ROW105",
+            "S05-ROW106",
+            "S05-ROW107",
+            "S05-ROW108",
+            "S05-ROW109",
+            "S05-ROW110",
+            "S06-ROW014",
+            "S06-ROW035",
+            "S06-ROW045",
+            "S06-ROW047",
+            "S06-ROW066",
+            "S06-ROW067",
+            "S06-ROW068",
+            "S06-ROW069",
+            "S06-ROW070",
+            "S06-ROW071",
+            "S06-ROW072",
+            "S06-ROW073",
+            "S06-ROW074"
+          ]
+        },
+        {
+          "id": "magic.special_place",
+          "label": "魔力ゾーンを増やす｜その他の特殊配置",
+          "count": 44,
+          "cardIds": [
+            "S01-ROW007",
+            "S01-ROW037",
+            "S01-ROW044",
+            "S01-ROW058",
+            "S01-ROW080",
+            "S01-ROW081",
+            "S01-ROW090",
+            "S01-ROW109",
+            "S01-ROW111",
+            "S01-ROW118",
+            "S02-ROW008",
+            "S02-ROW031",
+            "S03-ROW028",
+            "S03-ROW029",
+            "S03-ROW030",
+            "S03-ROW031",
+            "S03-ROW058",
+            "S03-ROW066",
+            "S03-ROW094",
+            "S04-ROW028",
+            "S04-ROW064",
+            "S05-ROW021",
+            "S05-ROW032",
+            "S05-ROW034",
+            "S05-ROW035",
+            "S05-ROW039",
+            "S05-ROW040",
+            "S05-ROW061",
+            "S05-ROW063",
+            "S05-ROW064",
+            "S05-ROW068",
+            "S05-ROW069",
+            "S05-ROW070",
+            "S05-ROW083",
+            "S05-ROW084",
+            "S05-ROW085",
+            "S05-ROW089",
+            "S05-ROW090",
+            "S05-ROW091",
+            "S06-ROW014",
+            "S06-ROW035",
+            "S06-ROW045",
+            "S06-ROW047",
+            "S06-ROW060"
+          ]
+        },
+        {
+          "id": "magic.add_colors",
+          "label": "必要な色を確保する｜色を追加／取得する",
+          "count": 8,
+          "cardIds": [
+            "S02-ROW040",
+            "S02-ROW057",
+            "S02-ROW090",
+            "S03-ROW008",
+            "S04-ROW008",
+            "S04-ROW044",
+            "S04-ROW081",
+            "S06-ROW073"
+          ]
+        },
+        {
+          "id": "magic.ignore_color",
+          "label": "必要な色を確保する｜色条件を無視",
+          "count": 2,
+          "cardIds": [
+            "S04-ROW007",
+            "S06-ROW072"
+          ]
+        },
+        {
+          "id": "magic.lower_use_level",
+          "label": "マホウを使いやすくする｜使用レベルを下げる",
+          "count": 1,
+          "cardIds": [
+            "S03-ROW064"
+          ]
+        },
+        {
+          "id": "magic.cost_down",
+          "label": "マホウを使いやすくする｜魔力コストを下げる",
+          "count": 1,
+          "cardIds": [
+            "S01-ROW034"
+          ]
+        },
+        {
+          "id": "magic.cost_zero",
+          "label": "マホウを使いやすくする｜魔力コストを0にする",
+          "count": 1,
+          "cardIds": [
+            "S02-ROW002"
+          ]
+        },
+        {
+          "id": "magic.zone_effect",
+          "label": "魔力ゾーンから効果を得る｜魔力ゾーンで能力を発揮",
+          "count": 9,
+          "cardIds": [
+            "S05-ROW102",
+            "S05-ROW103",
+            "S05-ROW104",
+            "S05-ROW105",
+            "S05-ROW106",
+            "S05-ROW108",
+            "S06-ROW072",
+            "S06-ROW073",
+            "S06-ROW074"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grave",
+      "label": "墓地利用",
+      "leaves": [
+        {
+          "id": "grave.deck_to_grave",
+          "label": "墓地を増やす／肥やす｜山札→墓地",
+          "count": 11,
+          "cardIds": [
+            "S01-ROW016",
+            "S01-ROW023",
+            "S03-ROW070",
+            "S03-ROW086",
+            "S03-ROW092",
+            "S04-ROW008",
+            "S04-ROW045",
+            "S05-ROW053",
+            "S05-ROW072",
+            "S05-ROW087",
+            "S06-ROW073"
+          ]
+        },
+        {
+          "id": "grave.hand_to_grave",
+          "label": "墓地を増やす／肥やす｜手札→墓地",
+          "count": 26,
+          "cardIds": [
+            "S01-ROW023",
+            "S01-ROW024",
+            "S01-ROW096",
+            "S01-ROW103",
+            "S02-ROW018",
+            "S02-ROW062",
+            "S02-ROW085",
+            "S03-ROW044",
+            "S03-ROW060",
+            "S03-ROW061",
+            "S03-ROW083",
+            "S03-ROW087",
+            "S04-ROW005",
+            "S04-ROW029",
+            "S04-ROW031",
+            "S04-ROW053",
+            "S04-ROW054",
+            "S04-ROW063",
+            "S05-ROW071",
+            "S06-ROW053",
+            "S06-ROW055",
+            "S06-ROW061",
+            "S06-ROW062",
+            "S06-ROW063",
+            "S06-ROW064",
+            "S06-ROW065"
+          ]
+        },
+        {
+          "id": "grave.to_field",
+          "label": "墓地のカードを再利用する｜墓地→戦場",
+          "count": 26,
+          "cardIds": [
+            "S01-ROW032",
+            "S01-ROW042",
+            "S02-ROW002",
+            "S02-ROW008",
+            "S02-ROW022",
+            "S02-ROW028",
+            "S02-ROW034",
+            "S02-ROW042",
+            "S02-ROW082",
+            "S03-ROW003",
+            "S03-ROW006",
+            "S03-ROW020",
+            "S03-ROW028",
+            "S03-ROW030",
+            "S03-ROW036",
+            "S03-ROW039",
+            "S03-ROW045",
+            "S03-ROW057",
+            "S03-ROW083",
+            "S03-ROW088",
+            "S04-ROW006",
+            "S04-ROW016",
+            "S04-ROW019",
+            "S04-ROW034",
+            "S04-ROW038",
+            "S05-ROW087"
+          ]
+        },
+        {
+          "id": "grave.to_hand",
+          "label": "墓地のカードを再利用する｜墓地→手札",
+          "count": 9,
+          "cardIds": [
+            "S01-ROW018",
+            "S01-ROW045",
+            "S01-ROW099",
+            "S03-ROW070",
+            "S04-ROW007",
+            "S04-ROW009",
+            "S04-ROW045",
+            "S05-ROW016",
+            "S05-ROW046"
+          ]
+        },
+        {
+          "id": "grave.to_deck",
+          "label": "墓地のカードを再利用する｜墓地→山札",
+          "count": 4,
+          "cardIds": [
+            "S04-ROW030",
+            "S04-ROW045",
+            "S04-ROW058",
+            "S06-ROW060"
+          ]
+        },
+        {
+          "id": "grave.to_magic",
+          "label": "墓地のカードを再利用する｜墓地→魔力ゾーン",
+          "count": 126,
+          "cardIds": [
+            "S01-ROW007",
+            "S01-ROW023",
+            "S01-ROW033",
+            "S01-ROW036",
+            "S01-ROW038",
+            "S01-ROW047",
+            "S01-ROW050",
+            "S01-ROW051",
+            "S01-ROW061",
+            "S01-ROW062",
+            "S01-ROW065",
+            "S01-ROW066",
+            "S01-ROW069",
+            "S01-ROW070",
+            "S01-ROW083",
+            "S01-ROW090",
+            "S01-ROW091",
+            "S01-ROW094",
+            "S01-ROW107",
+            "S01-ROW115",
+            "S01-ROW117",
+            "S01-ROW119",
+            "S01-ROW120",
+            "S02-ROW004",
+            "S02-ROW005",
+            "S02-ROW010",
+            "S02-ROW013",
+            "S02-ROW037",
+            "S02-ROW039",
+            "S02-ROW050",
+            "S02-ROW054",
+            "S02-ROW064",
+            "S02-ROW065",
+            "S02-ROW074",
+            "S02-ROW075",
+            "S02-ROW076",
+            "S02-ROW077",
+            "S02-ROW078",
+            "S02-ROW079",
+            "S02-ROW080",
+            "S02-ROW081",
+            "S02-ROW084",
+            "S02-ROW094",
+            "S03-ROW007",
+            "S03-ROW009",
+            "S03-ROW035",
+            "S03-ROW040",
+            "S03-ROW051",
+            "S03-ROW062",
+            "S03-ROW063",
+            "S03-ROW065",
+            "S03-ROW067",
+            "S03-ROW069",
+            "S03-ROW071",
+            "S03-ROW072",
+            "S03-ROW073",
+            "S03-ROW074",
+            "S03-ROW075",
+            "S03-ROW076",
+            "S03-ROW077",
+            "S03-ROW080",
+            "S03-ROW081",
+            "S03-ROW084",
+            "S03-ROW093",
+            "S03-ROW096",
+            "S03-ROW097",
+            "S03-ROW098",
+            "S04-ROW003",
+            "S04-ROW008",
+            "S04-ROW009",
+            "S04-ROW047",
+            "S04-ROW056",
+            "S04-ROW057",
+            "S04-ROW060",
+            "S04-ROW073",
+            "S04-ROW075",
+            "S04-ROW078",
+            "S04-ROW079",
+            "S04-ROW080",
+            "S04-ROW081",
+            "S05-ROW021",
+            "S05-ROW035",
+            "S05-ROW039",
+            "S05-ROW040",
+            "S05-ROW061",
+            "S05-ROW063",
+            "S05-ROW064",
+            "S05-ROW068",
+            "S05-ROW069",
+            "S05-ROW070",
+            "S05-ROW085",
+            "S05-ROW089",
+            "S05-ROW090",
+            "S05-ROW091",
+            "S05-ROW092",
+            "S05-ROW093",
+            "S05-ROW094",
+            "S05-ROW095",
+            "S05-ROW096",
+            "S05-ROW097",
+            "S05-ROW098",
+            "S05-ROW099",
+            "S05-ROW100",
+            "S05-ROW101",
+            "S05-ROW102",
+            "S05-ROW103",
+            "S05-ROW104",
+            "S05-ROW105",
+            "S05-ROW106",
+            "S05-ROW107",
+            "S05-ROW108",
+            "S05-ROW109",
+            "S05-ROW110",
+            "S06-ROW014",
+            "S06-ROW035",
+            "S06-ROW045",
+            "S06-ROW047",
+            "S06-ROW066",
+            "S06-ROW067",
+            "S06-ROW068",
+            "S06-ROW069",
+            "S06-ROW070",
+            "S06-ROW071",
+            "S06-ROW072",
+            "S06-ROW073",
+            "S06-ROW074"
+          ]
+        },
+        {
+          "id": "grave.count_threshold",
+          "label": "墓地を参照して強くなる｜枚数／閾値を参照",
+          "count": 18,
+          "cardIds": [
+            "S01-ROW029",
+            "S01-ROW034",
+            "S01-ROW077",
+            "S02-ROW006",
+            "S02-ROW084",
+            "S03-ROW007",
+            "S03-ROW089",
+            "S04-ROW009",
+            "S04-ROW010",
+            "S04-ROW034",
+            "S04-ROW037",
+            "S05-ROW060",
+            "S05-ROW066",
+            "S05-ROW088",
+            "S06-ROW008",
+            "S06-ROW013",
+            "S06-ROW021",
+            "S06-ROW060"
+          ]
+        },
+        {
+          "id": "grave.kind_trait",
+          "label": "墓地を参照して強くなる｜種類・特性を参照",
+          "count": 1,
+          "cardIds": [
+            "S01-ROW077"
+          ]
+        },
+        {
+          "id": "grave.opponent_reference",
+          "label": "墓地を参照して強くなる｜相手墓地を参照",
+          "count": 9,
+          "cardIds": [
+            "S01-ROW006",
+            "S02-ROW084",
+            "S03-ROW089",
+            "S04-ROW058",
+            "S05-ROW059",
+            "S05-ROW060",
+            "S05-ROW066",
+            "S05-ROW088",
+            "S06-ROW013"
+          ]
+        },
+        {
+          "id": "grave.active_in_grave",
+          "label": "墓地で働く能力を活かす｜墓地で発動／効果発揮",
+          "count": 9,
+          "cardIds": [
+            "S02-ROW003",
+            "S02-ROW007",
+            "S02-ROW021",
+            "S02-ROW033",
+            "S05-ROW072",
+            "S05-ROW073",
+            "S06-ROW004",
+            "S06-ROW048",
+            "S06-ROW051"
+          ]
+        },
+        {
+          "id": "grave.recruit_support",
+          "label": "墓地で働く能力を活かす｜徴募支援",
+          "count": 2,
+          "cardIds": [
+            "S02-ROW036",
+            "S02-ROW056"
+          ]
+        },
+        {
+          "id": "grave.legacy_support",
+          "label": "墓地で働く能力を活かす｜遺業・冥府発動支援",
+          "count": 5,
+          "cardIds": [
+            "S02-ROW034",
+            "S03-ROW062",
+            "S05-ROW021",
+            "S05-ROW072",
+            "S06-ROW048"
+          ]
+        },
+        {
+          "id": "grave.leave_trigger",
+          "label": "墓地で働く能力を活かす｜墓地から離れることを利用",
+          "count": 1,
+          "cardIds": [
+            "S02-ROW006"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hand",
+      "label": "手札",
+      "leaves": [
+        {
+          "id": "hand.draw",
+          "label": "手札を増やす｜ドロー",
+          "count": 235,
+          "cardIds": [
+            "S01-ROW003",
+            "S01-ROW004",
+            "S01-ROW008",
+            "S01-ROW010",
+            "S01-ROW011",
+            "S01-ROW012",
+            "S01-ROW013",
+            "S01-ROW015",
+            "S01-ROW021",
+            "S01-ROW022",
+            "S01-ROW024",
+            "S01-ROW025",
+            "S01-ROW029",
+            "S01-ROW034",
+            "S01-ROW035",
+            "S01-ROW037",
+            "S01-ROW041",
+            "S01-ROW046",
+            "S01-ROW059",
+            "S01-ROW063",
+            "S01-ROW067",
+            "S01-ROW072",
+            "S01-ROW073",
+            "S01-ROW074",
+            "S01-ROW076",
+            "S01-ROW079",
+            "S01-ROW084",
+            "S01-ROW088",
+            "S01-ROW092",
+            "S01-ROW096",
+            "S01-ROW097",
+            "S01-ROW100",
+            "S01-ROW102",
+            "S01-ROW103",
+            "S01-ROW104",
+            "S01-ROW106",
+            "S01-ROW108",
+            "S01-ROW110",
+            "S01-ROW111",
+            "S01-ROW112",
+            "S01-ROW113",
+            "S02-ROW002",
+            "S02-ROW005",
+            "S02-ROW006",
+            "S02-ROW008",
+            "S02-ROW010",
+            "S02-ROW011",
+            "S02-ROW012",
+            "S02-ROW015",
+            "S02-ROW017",
+            "S02-ROW018",
+            "S02-ROW019",
+            "S02-ROW020",
+            "S02-ROW021",
+            "S02-ROW022",
+            "S02-ROW025",
+            "S02-ROW026",
+            "S02-ROW027",
+            "S02-ROW029",
+            "S02-ROW030",
+            "S02-ROW031",
+            "S02-ROW032",
+            "S02-ROW033",
+            "S02-ROW035",
+            "S02-ROW036",
+            "S02-ROW037",
+            "S02-ROW040",
+            "S02-ROW041",
+            "S02-ROW043",
+            "S02-ROW044",
+            "S02-ROW045",
+            "S02-ROW046",
+            "S02-ROW047",
+            "S02-ROW050",
+            "S02-ROW062",
+            "S02-ROW070",
+            "S02-ROW073",
+            "S02-ROW082",
+            "S02-ROW083",
+            "S02-ROW085",
+            "S02-ROW088",
+            "S02-ROW089",
+            "S02-ROW093",
+            "S03-ROW003",
+            "S03-ROW004",
+            "S03-ROW005",
+            "S03-ROW010",
+            "S03-ROW011",
+            "S03-ROW012",
+            "S03-ROW013",
+            "S03-ROW014",
+            "S03-ROW015",
+            "S03-ROW016",
+            "S03-ROW018",
+            "S03-ROW022",
+            "S03-ROW023",
+            "S03-ROW024",
+            "S03-ROW026",
+            "S03-ROW029",
+            "S03-ROW034",
+            "S03-ROW037",
+            "S03-ROW044",
+            "S03-ROW045",
+            "S03-ROW048",
+            "S03-ROW052",
+            "S03-ROW055",
+            "S03-ROW056",
+            "S03-ROW063",
+            "S03-ROW064",
+            "S03-ROW065",
+            "S03-ROW067",
+            "S03-ROW069",
+            "S03-ROW071",
+            "S03-ROW080",
+            "S03-ROW082",
+            "S03-ROW085",
+            "S03-ROW087",
+            "S03-ROW088",
+            "S03-ROW092",
+            "S03-ROW095",
+            "S04-ROW004",
+            "S04-ROW007",
+            "S04-ROW012",
+            "S04-ROW013",
+            "S04-ROW020",
+            "S04-ROW021",
+            "S04-ROW022",
+            "S04-ROW023",
+            "S04-ROW024",
+            "S04-ROW025",
+            "S04-ROW027",
+            "S04-ROW028",
+            "S04-ROW029",
+            "S04-ROW030",
+            "S04-ROW031",
+            "S04-ROW032",
+            "S04-ROW033",
+            "S04-ROW035",
+            "S04-ROW036",
+            "S04-ROW037",
+            "S04-ROW039",
+            "S04-ROW042",
+            "S04-ROW043",
+            "S04-ROW048",
+            "S04-ROW053",
+            "S04-ROW054",
+            "S04-ROW057",
+            "S04-ROW062",
+            "S04-ROW063",
+            "S04-ROW064",
+            "S04-ROW065",
+            "S04-ROW066",
+            "S04-ROW077",
+            "S05-ROW002",
+            "S05-ROW003",
+            "S05-ROW007",
+            "S05-ROW008",
+            "S05-ROW009",
+            "S05-ROW010",
+            "S05-ROW011",
+            "S05-ROW013",
+            "S05-ROW017",
+            "S05-ROW019",
+            "S05-ROW022",
+            "S05-ROW023",
+            "S05-ROW024",
+            "S05-ROW025",
+            "S05-ROW026",
+            "S05-ROW027",
+            "S05-ROW029",
+            "S05-ROW031",
+            "S05-ROW034",
+            "S05-ROW036",
+            "S05-ROW037",
+            "S05-ROW042",
+            "S05-ROW043",
+            "S05-ROW044",
+            "S05-ROW046",
+            "S05-ROW047",
+            "S05-ROW048",
+            "S05-ROW049",
+            "S05-ROW051",
+            "S05-ROW052",
+            "S05-ROW053",
+            "S05-ROW055",
+            "S05-ROW056",
+            "S05-ROW062",
+            "S05-ROW063",
+            "S05-ROW067",
+            "S05-ROW076",
+            "S05-ROW079",
+            "S05-ROW082",
+            "S05-ROW088",
+            "S05-ROW109",
+            "S05-ROW110",
+            "S05-ROW111",
+            "S05-ROW112",
+            "S06-ROW005",
+            "S06-ROW006",
+            "S06-ROW007",
+            "S06-ROW008",
+            "S06-ROW010",
+            "S06-ROW015",
+            "S06-ROW016",
+            "S06-ROW017",
+            "S06-ROW020",
+            "S06-ROW021",
+            "S06-ROW022",
+            "S06-ROW024",
+            "S06-ROW025",
+            "S06-ROW027",
+            "S06-ROW028",
+            "S06-ROW029",
+            "S06-ROW031",
+            "S06-ROW032",
+            "S06-ROW034",
+            "S06-ROW037",
+            "S06-ROW038",
+            "S06-ROW040",
+            "S06-ROW041",
+            "S06-ROW042",
+            "S06-ROW043",
+            "S06-ROW055",
+            "S06-ROW059",
+            "S06-ROW061",
+            "S06-ROW062",
+            "S06-ROW063",
+            "S06-ROW064",
+            "S06-ROW065",
+            "S06-ROW066",
+            "S06-ROW067",
+            "S06-ROW068",
+            "S06-ROW069",
+            "S06-ROW070",
+            "S06-ROW075"
+          ]
+        },
+        {
+          "id": "hand.deck_to_hand",
+          "label": "手札を増やす｜山札→手札",
+          "count": 4,
+          "cardIds": [
+            "S03-ROW042",
+            "S04-ROW058",
+            "S06-ROW011",
+            "S06-ROW076"
+          ]
+        },
+        {
+          "id": "hand.grave_to_hand",
+          "label": "手札を増やす｜墓地→手札",
+          "count": 9,
+          "cardIds": [
+            "S01-ROW018",
+            "S01-ROW045",
+            "S01-ROW099",
+            "S03-ROW070",
+            "S04-ROW007",
+            "S04-ROW009",
+            "S04-ROW045",
+            "S05-ROW016",
+            "S05-ROW046"
+          ]
+        },
+        {
+          "id": "hand.draw_discard",
+          "label": "手札を整える｜引いて捨てる",
+          "count": 11,
+          "cardIds": [
+            "S01-ROW024",
+            "S01-ROW096",
+            "S02-ROW062",
+            "S04-ROW029",
+            "S04-ROW063",
+            "S06-ROW055",
+            "S06-ROW061",
+            "S06-ROW062",
+            "S06-ROW063",
+            "S06-ROW064",
+            "S06-ROW065"
+          ]
+        },
+        {
+          "id": "hand.redraw",
+          "label": "手札を整える｜山札へ戻して引き直す",
+          "count": 1,
+          "cardIds": [
+            "S03-ROW064"
+          ]
+        },
+        {
+          "id": "hand.convert",
+          "label": "手札を整える｜手札を別リソースへ変換",
+          "count": 3,
+          "cardIds": [
+            "S02-ROW018",
+            "S03-ROW091",
+            "S06-ROW053"
+          ]
+        },
+        {
+          "id": "hand.opponent_choice_discard",
+          "label": "相手の手札を減らす｜相手が選んで墓地へ",
+          "count": 7,
+          "cardIds": [
+            "S01-ROW098",
+            "S03-ROW011",
+            "S03-ROW044",
+            "S03-ROW048",
+            "S03-ROW083",
+            "S05-ROW030",
+            "S06-ROW046"
+          ]
+        },
+        {
+          "id": "hand.look_choose_discard",
+          "label": "相手の手札を減らす｜手札を見て選んで墓地へ",
+          "count": 6,
+          "cardIds": [
+            "S01-ROW027",
+            "S02-ROW021",
+            "S02-ROW023",
+            "S04-ROW055",
+            "S04-ROW061",
+            "S05-ROW029"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "deck",
+      "label": "山札",
+      "leaves": [
+        {
+          "id": "deck.look_top",
+          "label": "必要なカードを探す｜山札上を見る",
+          "count": 1,
+          "cardIds": [
+            "S02-ROW057"
+          ]
+        },
+        {
+          "id": "deck.look_bottom",
+          "label": "必要なカードを探す｜山札下を見る",
+          "count": 2,
+          "cardIds": [
+            "S02-ROW082",
+            "S03-ROW040"
+          ]
+        },
+        {
+          "id": "deck.conditional_to_hand",
+          "label": "必要なカードを探す｜条件付きで手札へ",
+          "count": 4,
+          "cardIds": [
+            "S03-ROW042",
+            "S04-ROW058",
+            "S06-ROW011",
+            "S06-ROW076"
+          ]
+        },
+        {
+          "id": "deck.conditional_to_field",
+          "label": "必要なカードを探す｜条件付きで戦場へ",
+          "count": 2,
+          "cardIds": [
+            "S02-ROW055",
+            "S06-ROW022"
+          ]
+        },
+        {
+          "id": "deck.top_bottom_place",
+          "label": "山札を操作する｜上／下へ置く",
+          "count": 27,
+          "cardIds": [
+            "S01-ROW009",
+            "S01-ROW092",
+            "S02-ROW006",
+            "S02-ROW014",
+            "S02-ROW048",
+            "S02-ROW050",
+            "S02-ROW079",
+            "S02-ROW080",
+            "S02-ROW081",
+            "S02-ROW092",
+            "S03-ROW009",
+            "S03-ROW036",
+            "S03-ROW039",
+            "S03-ROW040",
+            "S03-ROW041",
+            "S03-ROW042",
+            "S03-ROW068",
+            "S03-ROW085",
+            "S03-ROW091",
+            "S04-ROW045",
+            "S04-ROW049",
+            "S04-ROW058",
+            "S04-ROW073",
+            "S04-ROW075",
+            "S05-ROW081",
+            "S05-ROW086",
+            "S05-ROW109"
+          ]
+        },
+        {
+          "id": "deck.order",
+          "label": "山札を操作する｜順番を指定する",
+          "count": 3,
+          "cardIds": [
+            "S05-ROW063",
+            "S05-ROW086",
+            "S05-ROW088"
+          ]
+        },
+        {
+          "id": "deck.shuffle",
+          "label": "山札を操作する｜シャッフルする",
+          "count": 8,
+          "cardIds": [
+            "S02-ROW057",
+            "S03-ROW064",
+            "S04-ROW039",
+            "S04-ROW058",
+            "S05-ROW071",
+            "S06-ROW011",
+            "S06-ROW060",
+            "S06-ROW076"
+          ]
+        },
+        {
+          "id": "deck.grave_to_deck",
+          "label": "山札を回復する｜墓地→山札",
+          "count": 4,
+          "cardIds": [
+            "S04-ROW030",
+            "S04-ROW045",
+            "S04-ROW058",
+            "S06-ROW060"
+          ]
+        },
+        {
+          "id": "deck.hand_to_deck",
+          "label": "山札を回復する｜手札→山札",
+          "count": 4,
+          "cardIds": [
+            "S03-ROW037",
+            "S03-ROW064",
+            "S05-ROW071",
+            "S06-ROW011"
+          ]
+        },
+        {
+          "id": "deck.field_to_deck",
+          "label": "山札を回復する｜戦場→山札",
+          "count": 25,
+          "cardIds": [
+            "S01-ROW009",
+            "S01-ROW092",
+            "S02-ROW002",
+            "S02-ROW008",
+            "S02-ROW014",
+            "S02-ROW022",
+            "S02-ROW028",
+            "S02-ROW034",
+            "S02-ROW042",
+            "S02-ROW058",
+            "S02-ROW079",
+            "S02-ROW080",
+            "S02-ROW081",
+            "S02-ROW082",
+            "S03-ROW003",
+            "S03-ROW020",
+            "S03-ROW036",
+            "S03-ROW039",
+            "S04-ROW006",
+            "S04-ROW016",
+            "S04-ROW038",
+            "S04-ROW058",
+            "S04-ROW067",
+            "S04-ROW069",
+            "S04-ROW071"
+          ]
+        },
+        {
+          "id": "deck.self_mill",
+          "label": "山札を墓地へ送る｜自分の山札→墓地",
+          "count": 11,
+          "cardIds": [
+            "S01-ROW016",
+            "S01-ROW023",
+            "S03-ROW070",
+            "S03-ROW086",
+            "S03-ROW092",
+            "S04-ROW008",
+            "S04-ROW045",
+            "S05-ROW053",
+            "S05-ROW072",
+            "S05-ROW087",
+            "S06-ROW073"
+          ]
+        },
+        {
+          "id": "deck.opponent_mill",
+          "label": "山札を墓地へ送る｜相手の山札→墓地",
+          "count": 10,
+          "cardIds": [
+            "S03-ROW011",
+            "S03-ROW070",
+            "S03-ROW093",
+            "S04-ROW010",
+            "S04-ROW036",
+            "S04-ROW039",
+            "S04-ROW040",
+            "S05-ROW057",
+            "S05-ROW075",
+            "S05-ROW090"
+          ]
+        }
+      ]
+    }
+  ],
+  "cardTags": {
+    "S01-ROW002": [
+      "attack.quick",
+      "attack.pressure"
+    ],
+    "S01-ROW003": [
+      "board.destroy",
+      "hand.draw"
+    ],
+    "S01-ROW004": [
+      "attack.power_plus",
+      "interference.limit_magic_haikei",
+      "hand.draw"
+    ],
+    "S01-ROW005": [
+      "attack.unblockable",
+      "attack.pressure",
+      "deploy.summon_right"
+    ],
+    "S01-ROW006": [
+      "board.lose_abilities",
+      "interference.lose_abilities",
+      "grave.opponent_reference"
+    ],
+    "S01-ROW007": [
+      "board.to_magic",
+      "magic.grave_to_zone",
+      "magic.special_place",
+      "grave.to_magic"
+    ],
+    "S01-ROW008": [
+      "attack.quick",
+      "hand.draw"
+    ],
+    "S01-ROW009": [
+      "attack.quick",
+      "deck.top_bottom_place",
+      "deck.field_to_deck"
+    ],
+    "S01-ROW010": [
+      "board.destroy",
+      "hand.draw"
+    ],
+    "S01-ROW011": [
+      "deploy.summon_right",
+      "hand.draw"
+    ],
+    "S01-ROW012": [
+      "attack.attack_plus",
+      "hand.draw"
+    ],
+    "S01-ROW013": [
+      "hand.draw"
+    ],
+    "S01-ROW014": [
+      "attack.power_plus",
+      "board.destroy"
+    ],
+    "S01-ROW015": [
+      "attack.quick",
+      "attack.attack_plus",
+      "hand.draw"
+    ],
+    "S01-ROW016": [
+      "grave.deck_to_grave",
+      "deck.self_mill"
+    ],
+    "S01-ROW017": [
+      "attack.attack_plus",
+      "deploy.summon_right",
+      "magic.field_to_zone"
+    ],
+    "S01-ROW018": [
+      "grave.to_hand",
+      "hand.grave_to_hand"
+    ],
+    "S01-ROW019": [
+      "board.destroy"
+    ],
+    "S01-ROW020": [
+      "attack.quick",
+      "attack.pressure"
+    ],
+    "S01-ROW021": [
+      "attack.quick",
+      "attack.ready",
+      "hand.draw"
+    ],
+    "S01-ROW022": [
+      "hand.draw"
+    ],
+    "S01-ROW023": [
+      "magic.grave_to_zone",
+      "grave.deck_to_grave",
+      "grave.hand_to_grave",
+      "grave.to_magic",
+      "deck.self_mill"
+    ],
+    "S01-ROW024": [
+      "grave.hand_to_grave",
+      "hand.draw",
+      "hand.draw_discard"
+    ],
+    "S01-ROW025": [
+      "attack.guardian_sleep",
+      "defense.block_plus",
+      "defense.enemy_sleep",
+      "board.sleep",
+      "hand.draw"
+    ],
+    "S01-ROW026": [
+      "board.prevent_activation",
+      "board.face_down",
+      "interference.prevent_activation",
+      "interference.maryoku_face_down"
+    ],
+    "S01-ROW027": [
+      "interference.hand_discard",
+      "hand.look_choose_discard"
+    ],
+    "S01-ROW028": [
+      "defense.guardian_generate",
+      "deploy.deck_to_field",
+      "deploy.guardian_generate"
+    ],
+    "S01-ROW029": [
+      "attack.power_plus",
+      "attack.guardian_remove",
+      "grave.count_threshold",
+      "hand.draw"
+    ],
+    "S01-ROW030": [
+      "defense.guardian_generate",
+      "deploy.deck_to_field",
+      "deploy.guardian_generate"
+    ],
+    "S01-ROW031": [
+      "attack.pressure",
+      "defense.guardian_generate",
+      "deploy.magic_to_field",
+      "deploy.guardian_generate"
+    ],
+    "S01-ROW032": [
+      "defense.guardian_generate",
+      "deploy.grave_to_field",
+      "deploy.guardian_generate",
+      "grave.to_field"
+    ],
+    "S01-ROW033": [
+      "board.sleep",
+      "magic.grave_to_zone",
+      "grave.to_magic"
+    ],
+    "S01-ROW034": [
+      "deploy.summon_right",
+      "magic.cost_down",
+      "grave.count_threshold",
+      "hand.draw"
+    ],
+    "S01-ROW035": [
+      "hand.draw"
+    ],
+    "S01-ROW036": [
+      "attack.power_plus",
+      "magic.grave_to_zone",
+      "grave.to_magic"
+    ],
+    "S01-ROW037": [
+      "magic.special_place",
+      "hand.draw"
+    ],
+    "S01-ROW038": [
+      "magic.grave_to_zone",
+      "grave.to_magic"
+    ],
+    "S01-ROW039": [
+      "board.prevent_activation",
+      "board.guardianize",
+      "interference.prevent_activation"
+    ],
+    "S01-ROW040": [],
+    "S01-ROW041": [
+      "attack.power_plus",
+      "hand.draw"
+    ],
+    "S01-ROW042": [
+      "interference.ban_grave_to_field",
+      "deploy.grave_to_field",
+      "grave.to_field"
+    ],
+    "S01-ROW043": [],
+    "S01-ROW044": [
+      "magic.special_place"
+    ],
+    "S01-ROW045": [
+      "interference.ban_grave_to_hand",
+      "grave.to_hand",
+      "hand.grave_to_hand"
+    ],
+    "S01-ROW046": [
+      "defense.indestructible",
+      "deploy.summon_right",
+      "hand.draw"
+    ],
+    "S01-ROW047": [
+      "attack.quick",
+      "magic.grave_to_zone",
+      "grave.to_magic"
+    ],
+    "S01-ROW048": [
+      "attack.unblockable"
+    ],
+    "S01-ROW049": [
+      "attack.quick"
+    ],
+    "S01-ROW050": [
+      "deploy.maryoku_right",
+      "magic.grave_to_zone",
+      "grave.to_magic"
+    ],
+    "S01-ROW051": [
+      "magic.grave_to_zone",
+      "grave.to_magic"
+    ],
+    "S01-ROW052": [],
+    "S01-ROW053": [],
+    "S01-ROW054": [
+      "attack.unblockable"
+    ],
+    "S01-ROW055": [
+      "win.special_outcome",
+      "attack.extra_battle"
+    ],
+    "S01-ROW056": [],
+    "S01-ROW057": [],
+    "S01-ROW058": [
+      "magic.special_place"
+    ],
+    "S01-ROW059": [
+      "hand.draw"
+    ],
+    "S01-ROW060": [
+      "attack.attack_plus",
+      "magic.field_to_zone"
+    ],
+    "S01-ROW061": [
+      "attack.attack_plus",
+      "magic.field_to_zone",
+      "magic.grave_to_zone",
+      "grave.to_magic"
+    ],
+    "S01-ROW062": [
+      "magic.grave_to_zone",
+      "grave.to_magic"
+    ],
+    "S01-ROW063": [
+      "hand.draw"
+    ],
+    "S01-ROW064": [
+      "defense.block_plus",
+      "magic.field_to_zone"
+    ],
+    "S01-ROW065": [
+      "magic.field_to_zone",
+      "magic.grave_to_zone",
+      "grave.to_magic"
+    ],
+    "S01-ROW066": [
+      "magic.grave_to_zone",
+      "grave.to_magic"
+    ],
+    "S01-ROW067": [
+      "hand.draw"
+    ],
+    "S01-ROW068": [
+      "attack.power_plus",
+      "magic.field_to_zone"
+    ],
+    "S01-ROW069": [
+      "magic.field_to_zone",
+      "magic.grave_to_zone",
+      "grave.to_magic"
+    ],
+    "S01-ROW070": [
+      "magic.grave_to_zone",
+      "grave.to_magic"
+    ],
+    "S01-ROW071": [
+      "attack.pressure",
+      "board.destroy"
+    ],
+    "S01-ROW072": [
+      "attack.unblockable",
+      "hand.draw"
+    ],
+    "S01-ROW073": [
+      "hand.draw"
+    ],
+    "S01-ROW074": [
+      "defense.block_plus",
+      "interference.enter_sleeping",
+      "hand.draw"
+    ],
+    "S01-ROW075": [
+      "attack.power_plus"
+    ],
+    "S01-ROW076": [
+      "deploy.summon_right",
+      "hand.draw"
+    ],
+    "S01-ROW077": [
+      "attack.ready",
+      "attack.power_plus",
+      "grave.count_threshold",
+      "grave.kind_trait"
+    ],
+    "S01-ROW078": [],
+    "S01-ROW079": [
+      "hand.draw"
+    ],
+    "S01-ROW080": [
+      "attack.pressure",
+      "magic.deck_to_zone",
+      "magic.special_place"
+    ],
+    "S01-ROW081": [
+      "attack.guardian_remove",
+      "board.to_magic",
+      "magic.special_place"
+    ],
+    "S01-ROW082": [
+      "board.destroy"
+    ],
+    "S01-ROW083": [
+      "attack.quick",
+      "magic.grave_to_zone",
+      "grave.to_magic"
+    ],
+    "S01-ROW084": [
+      "attack.attack_plus",
+      "hand.draw"
+    ],
+    "S01-ROW085": [
+      "board.destroy"
+    ],
+    "S01-ROW086": [
+      "attack.pressure"
+    ],
+    "S01-ROW087": [
+      "deploy.summon_right"
+    ],
+    "S01-ROW088": [
+      "attack.quick",
+      "hand.draw"
+    ],
+    "S01-ROW089": [
+      "attack.quick",
+      "board.destroy"
+    ],
+    "S01-ROW090": [
+      "magic.grave_to_zone",
+      "magic.special_place",
+      "grave.to_magic"
+    ],
+    "S01-ROW091": [
+      "attack.power_plus",
+      "magic.grave_to_zone",
+      "grave.to_magic"
+    ],
+    "S01-ROW092": [
+      "board.destroy",
+      "hand.draw",
+      "deck.top_bottom_place",
+      "deck.field_to_deck"
+    ],
+    "S01-ROW093": [],
+    "S01-ROW094": [
+      "magic.grave_to_zone",
+      "grave.to_magic"
+    ],
+    "S01-ROW095": [],
+    "S01-ROW096": [
+      "grave.hand_to_grave",
+      "hand.draw",
+      "hand.draw_discard"
+    ],
+    "S01-ROW097": [
+      "attack.unblockable",
+      "hand.draw"
+    ],
+    "S01-ROW098": [
+      "interference.hand_discard",
+      "hand.opponent_choice_discard"
+    ],
+    "S01-ROW099": [
+      "grave.to_hand",
+      "hand.grave_to_hand"
+    ],
+    "S01-ROW100": [
+      "attack.power_plus",
+      "board.prevent_activation",
+      "interference.prevent_activation",
+      "hand.draw"
+    ],
+    "S01-ROW101": [
+      "attack.pressure",
+      "attack.power_plus"
+    ],
+    "S01-ROW102": [
+      "attack.unblockable",
+      "board.destroy",
+      "hand.draw"
+    ],
+    "S01-ROW103": [
+      "grave.hand_to_grave",
+      "hand.draw"
+    ],
+    "S01-ROW104": [
+      "hand.draw"
+    ],
+    "S01-ROW105": [
+      "attack.attack_plus",
+      "defense.indestructible"
+    ],
+    "S01-ROW106": [
+      "hand.draw"
+    ],
+    "S01-ROW107": [
+      "magic.grave_to_zone",
+      "grave.to_magic"
+    ],
+    "S01-ROW108": [
+      "attack.ready",
+      "defense.ready",
+      "hand.draw"
+    ],
+    "S01-ROW109": [
+      "magic.deck_to_zone",
+      "magic.special_place"
+    ],
+    "S01-ROW110": [
+      "attack.ready",
+      "attack.attack_plus",
+      "hand.draw"
+    ],
+    "S01-ROW111": [
+      "magic.special_place",
+      "hand.draw"
+    ],
+    "S01-ROW112": [
+      "attack.ready",
+      "hand.draw"
+    ],
+    "S01-ROW113": [
+      "hand.draw"
+    ],
+    "S01-ROW114": [
+      "attack.ready",
+      "defense.ready"
+    ],
+    "S01-ROW115": [
+      "magic.grave_to_zone",
+      "grave.to_magic"
+    ],
+    "S01-ROW116": [],
+    "S01-ROW117": [
+      "attack.ready",
+      "attack.power_plus",
+      "defense.ready",
+      "magic.grave_to_zone",
+      "grave.to_magic"
+    ],
+    "S01-ROW118": [
+      "magic.deck_to_zone",
+      "magic.special_place"
+    ],
+    "S01-ROW119": [
+      "defense.guardian_generate",
+      "deploy.deck_to_field",
+      "deploy.guardian_generate",
+      "magic.grave_to_zone",
+      "grave.to_magic"
+    ],
+    "S01-ROW120": [
+      "magic.grave_to_zone",
+      "grave.to_magic"
+    ],
+    "S02-ROW002": [
+      "deploy.grave_to_field",
+      "magic.cost_zero",
+      "grave.to_field",
+      "hand.draw",
+      "deck.field_to_deck"
+    ],
+    "S02-ROW003": [
+      "attack.pressure",
+      "attack.power_plus",
+      "grave.active_in_grave"
+    ],
+    "S02-ROW004": [
+      "attack.quick",
+      "attack.guardian_remove",
+      "board.to_hand",
+      "board.lose_abilities",
+      "interference.lose_abilities",
+      "interference.prevent_gain",
+      "magic.grave_to_zone",
+      "grave.to_magic"
+    ],
+    "S02-ROW005": [
+      "win.special_outcome",
+      "magic.grave_to_zone",
+      "grave.to_magic",
+      "hand.draw"
+    ],
+    "S02-ROW006": [
+      "defense.indestructible",
+      "grave.count_threshold",
+      "grave.leave_trigger",
+      "hand.draw",
+      "deck.top_bottom_place"
+    ],
+    "S02-ROW007": [
+      "defense.watcher",
+      "defense.guardian_generate",
+      "deploy.deck_to_field",
+      "deploy.guardian_generate",
+      "grave.active_in_grave"
+    ],
+    "S02-ROW008": [
+      "deploy.grave_to_field",
+      "magic.deck_to_zone",
+      "magic.special_place",
+      "grave.to_field",
+      "hand.draw",
+      "deck.field_to_deck"
+    ],
+    "S02-ROW009": [
+      "attack.quick",
+      "attack.extra_battle",
+      "deploy.lower_ijin_level"
+    ],
+    "S02-ROW010": [
+      "deploy.summon_right",
+      "deploy.maryoku_right",
+      "magic.grave_to_zone",
+      "grave.to_magic",
+      "hand.draw"
+    ],
+    "S02-ROW011": [
+      "defense.block_plus",
+      "hand.draw"
+    ],
+    "S02-ROW012": [
+      "attack.attack_plus",
+      "defense.block_plus",
+      "hand.draw"
+    ],
+    "S02-ROW013": [
+      "defense.indestructible",
+      "magic.grave_to_zone",
+      "grave.to_magic"
+    ],
+    "S02-ROW014": [
+      "attack.quick",
+      "defense.guardian_generate",
+      "deploy.deck_to_field",
+      "deploy.guardian_generate",
+      "deck.top_bottom_place",
+      "deck.field_to_deck"
+    ],
+    "S02-ROW015": [
+      "attack.pressure",
+      "attack.attack_plus",
+      "hand.draw"
+    ],
+    "S02-ROW016": [
+      "attack.quick",
+      "attack.pressure"
+    ],
+    "S02-ROW017": [
+      "defense.indestructible",
+      "defense.effect_indestructible",
+      "defense.cannot_leave",
+      "hand.draw"
+    ],
+    "S02-ROW018": [
+      "board.destroy",
+      "grave.hand_to_grave",
+      "hand.draw",
+      "hand.convert"
+    ],
+    "S02-ROW019": [
+      "attack.power_plus",
+      "interference.limit_maryoku_place",
+      "hand.draw"
+    ],
+    "S02-ROW020": [
+      "hand.draw"
+    ],
+    "S02-ROW021": [
+      "defense.block_plus",
+      "interference.hand_discard",
+      "grave.active_in_grave",
+      "hand.draw",
+      "hand.look_choose_discard"
+    ],
+    "S02-ROW022": [
+      "deploy.grave_to_field",
+      "deploy.summon_right",
+      "deploy.maryoku_right",
+      "grave.to_field",
+      "hand.draw",
+      "deck.field_to_deck"
+    ],
+    "S02-ROW023": [
+      "interference.hand_discard",
+      "hand.look_choose_discard"
+    ],
+    "S02-ROW024": [
+      "attack.quick",
+      "defense.watcher",
+      "defense.block_plus"
+    ],
+    "S02-ROW025": [
+      "hand.draw"
+    ],
+    "S02-ROW026": [
+      "attack.power_plus",
+      "hand.draw"
+    ],
+    "S02-ROW027": [
+      "board.prevent_activation",
+      "interference.prevent_activation",
+      "interference.no_battle",
+      "hand.draw"
+    ],
+    "S02-ROW028": [
+      "deploy.grave_to_field",
+      "grave.to_field",
+      "deck.field_to_deck"
+    ],
+    "S02-ROW029": [
+      "deploy.summon_right",
+      "hand.draw"
+    ],
+    "S02-ROW030": [
+      "deploy.summon_right",
+      "hand.draw"
+    ],
+    "S02-ROW031": [
+      "attack.power_plus",
+      "magic.special_place",
+      "hand.draw"
+    ],
+    "S02-ROW032": [
+      "hand.draw"
+    ],
+    "S02-ROW033": [
+      "defense.guardian_generate",
+      "deploy.guardian_generate",
+      "grave.active_in_grave",
+      "hand.draw"
+    ],
+    "S02-ROW034": [
+      "deploy.grave_to_field",
+      "grave.to_field",
+      "grave.legacy_support",
+      "deck.field_to_deck"
+    ],
+    "S02-ROW035": [
+      "hand.draw"
+    ],
+    "S02-ROW036": [
+      "defense.block_plus",
+      "defense.guardian_generate",
+      "deploy.deck_to_field",
+      "deploy.guardian_generate",
+      "grave.recruit_support",
+      "hand.draw"
+    ],
+    "S02-ROW037": [
+      "deploy.summon_right",
+      "magic.grave_to_zone",
+      "grave.to_magic",
+      "hand.draw"
+    ],
+    "S02-ROW038": [
+      "attack.quick",
+      "attack.power_plus",
+      "defense.watcher",
+      "deploy.lower_ijin_level"
+    ],
+    "S02-ROW039": [
+      "board.to_hand",
+      "board.prevent_activation",
+      "interference.prevent_activation",
+      "magic.grave_to_zone",
+      "grave.to_magic"
+    ],
+    "S02-ROW040": [
+      "magic.add_colors",
+      "hand.draw"
+    ],
+    "S02-ROW041": [
+      "hand.draw"
+    ],
+    "S02-ROW042": [
+      "deploy.grave_to_field",
+      "deploy.maryoku_right",
+      "grave.to_field",
+      "deck.field_to_deck"
+    ],
+    "S02-ROW043": [
+      "attack.attack_plus",
+      "hand.draw"
+    ],
+    "S02-ROW044": [
+      "attack.power_plus",
+      "defense.watcher",
+      "hand.draw"
+    ],
+    "S02-ROW045": [
+      "attack.quick",
+      "attack.power_plus",
+      "defense.watcher",
+      "hand.draw"
+    ],
+    "S02-ROW046": [
+      "board.lose_abilities",
+      "interference.lose_abilities",
+      "interference.enter_sleeping",
+      "hand.draw"
+    ],
+    "S02-ROW047": [
+      "attack.unblockable",
+      "deploy.summon_right",
+      "hand.draw"
+    ],
+    "S02-ROW048": [
+      "defense.watcher",
+      "deck.top_bottom_place"
+    ],
+    "S02-ROW049": [
+      "attack.pressure",
+      "defense.watcher"
+    ],
+    "S02-ROW050": [
+      "magic.grave_to_zone",
+      "grave.to_magic",
+      "hand.draw",
+      "deck.top_bottom_place"
+    ],
+    "S02-ROW051": [
+      "board.sleep",
+      "deploy.summon_right"
+    ],
+    "S02-ROW052": [
+      "board.guardianize",
+      "board.face_down"
+    ],
+    "S02-ROW053": [
+      "deploy.summon_right"
+    ],
+    "S02-ROW054": [
+      "defense.watcher",
+      "magic.grave_to_zone",
+      "grave.to_magic"
+    ],
+    "S02-ROW055": [
+      "attack.power_plus",
+      "deploy.deck_to_field",
+      "deck.conditional_to_field"
+    ],
+    "S02-ROW056": [
+      "defense.guardian_generate",
+      "deploy.deck_to_field",
+      "deploy.guardian_generate",
+      "grave.recruit_support"
+    ],
+    "S02-ROW057": [
+      "magic.add_colors",
+      "deck.look_top",
+      "deck.shuffle"
+    ],
+    "S02-ROW058": [
+      "deck.field_to_deck"
+    ],
+    "S02-ROW059": [],
+    "S02-ROW060": [
+      "deploy.summon_right"
+    ],
+    "S02-ROW061": [
+      "defense.guardian_generate",
+      "deploy.deck_to_field",
+      "deploy.guardian_generate"
+    ],
+    "S02-ROW062": [
+      "grave.hand_to_grave",
+      "hand.draw",
+      "hand.draw_discard"
+    ],
+    "S02-ROW063": [
+      "board.to_hand"
+    ],
+    "S02-ROW064": [
+      "magic.grave_to_zone",
+      "grave.to_magic"
+    ],
+    "S02-ROW065": [
+      "defense.guardian_generate",
+      "deploy.deck_to_field",
+      "deploy.guardian_generate",
+      "magic.field_to_zone",
+      "magic.grave_to_zone",
+      "grave.to_magic"
+    ],
+    "S02-ROW066": [
+      "deploy.maryoku_right"
+    ],
+    "S02-ROW067": [],
+    "S02-ROW068": [],
+    "S02-ROW069": [
+      "board.guardianize"
+    ],
+    "S02-ROW070": [
+      "hand.draw"
+    ],
+    "S02-ROW071": [
+      "board.stay_asleep"
+    ],
+    "S02-ROW072": [
+      "magic.field_to_zone"
+    ],
+    "S02-ROW073": [
+      "hand.draw"
+    ],
+    "S02-ROW074": [
+      "attack.power_plus",
+      "magic.grave_to_zone",
+      "grave.to_magic"
+    ],
+    "S02-ROW075": [
+      "magic.grave_to_zone",
+      "grave.to_magic"
+    ],
+    "S02-ROW076": [
+      "magic.grave_to_zone",
+      "grave.to_magic"
+    ],
+    "S02-ROW077": [
+      "magic.grave_to_zone",
+      "grave.to_magic"
+    ],
+    "S02-ROW078": [
+      "magic.grave_to_zone",
+      "grave.to_magic"
+    ],
+    "S02-ROW079": [
+      "magic.grave_to_zone",
+      "grave.to_magic",
+      "deck.top_bottom_place",
+      "deck.field_to_deck"
+    ],
+    "S02-ROW080": [
+      "magic.grave_to_zone",
+      "grave.to_magic",
+      "deck.top_bottom_place",
+      "deck.field_to_deck"
+    ],
+    "S02-ROW081": [
+      "magic.grave_to_zone",
+      "grave.to_magic",
+      "deck.top_bottom_place",
+      "deck.field_to_deck"
+    ],
+    "S02-ROW082": [
+      "deploy.grave_to_field",
+      "grave.to_field",
+      "hand.draw",
+      "deck.look_bottom",
+      "deck.field_to_deck"
+    ],
+    "S02-ROW083": [
+      "attack.attack_plus",
+      "defense.watcher",
+      "hand.draw"
+    ],
+    "S02-ROW084": [
+      "attack.quick",
+      "attack.attack_plus",
+      "defense.watcher",
+      "magic.grave_to_zone",
+      "grave.to_magic",
+      "grave.count_threshold",
+      "grave.opponent_reference"
+    ],
+    "S02-ROW085": [
+      "attack.quick",
+      "defense.watcher",
+      "grave.hand_to_grave",
+      "hand.draw"
+    ],
+    "S02-ROW086": [
+      "attack.pressure",
+      "attack.guardian_sleep",
+      "defense.enemy_sleep",
+      "board.sleep"
+    ],
+    "S02-ROW087": [
+      "attack.pressure",
+      "defense.guardian_generate",
+      "deploy.magic_to_field",
+      "deploy.guardian_generate"
+    ],
+    "S02-ROW088": [
+      "hand.draw"
+    ],
+    "S02-ROW089": [
+      "defense.guardian_generate",
+      "deploy.deck_to_field",
+      "deploy.guardian_generate",
+      "hand.draw"
+    ],
+    "S02-ROW090": [
+      "magic.add_colors"
+    ],
+    "S02-ROW091": [],
+    "S02-ROW092": [
+      "deck.top_bottom_place"
+    ],
+    "S02-ROW093": [
+      "hand.draw"
+    ],
+    "S02-ROW094": [
+      "magic.grave_to_zone",
+      "grave.to_magic"
+    ],
+    "S03-ROW002": [
+      "attack.pressure",
+      "attack.attack_plus",
+      "board.destroy"
+    ],
+    "S03-ROW003": [
+      "board.destroy",
+      "deploy.grave_to_field",
+      "grave.to_field",
+      "hand.draw",
+      "deck.field_to_deck"
+    ],
+    "S03-ROW004": [
+      "hand.draw"
+    ],
+    "S03-ROW005": [
+      "attack.pressure",
+      "board.prevent_activation",
+      "interference.prevent_activation",
+      "hand.draw"
+    ],
+    "S03-ROW006": [
+      "attack.power_plus",
+      "board.prevent_activation",
+      "interference.prevent_activation",
+      "deploy.hand_to_field",
+      "deploy.grave_to_field",
+      "grave.to_field"
+    ],
+    "S03-ROW007": [
+      "board.to_hand",
+      "deploy.summon_right",
+      "magic.grave_to_zone",
+      "grave.to_magic",
+      "grave.count_threshold"
+    ],
+    "S03-ROW008": [
+      "board.destroy",
+      "magic.add_colors"
+    ],
+    "S03-ROW009": [
+      "board.to_deck",
+      "deploy.lower_ijin_level",
+      "magic.grave_to_zone",
+      "grave.to_magic",
+      "deck.top_bottom_place"
+    ],
+    "S03-ROW010": [
+      "deploy.summon_right",
+      "hand.draw"
+    ],
+    "S03-ROW011": [
+      "win.deck_attack",
+      "interference.hand_discard",
+      "hand.draw",
+      "hand.opponent_choice_discard",
+      "deck.opponent_mill"
+    ],
+    "S03-ROW012": [
+      "hand.draw"
+    ],
+    "S03-ROW013": [
+      "board.destroy",
+      "hand.draw"
+    ],
+    "S03-ROW014": [
+      "hand.draw"
+    ],
+    "S03-ROW015": [
+      "deploy.maryoku_right",
+      "hand.draw"
+    ],
+    "S03-ROW016": [
+      "hand.draw"
+    ],
+    "S03-ROW017": [
+      "attack.quick"
+    ],
+    "S03-ROW018": [
+      "board.destroy",
+      "deploy.lower_ijin_level",
+      "hand.draw"
+    ],
+    "S03-ROW019": [
+      "interference.no_extra_rights",
+      "deploy.lower_ijin_level"
+    ],
+    "S03-ROW020": [
+      "defense.block_plus",
+      "deploy.grave_to_field",
+      "grave.to_field",
+      "deck.field_to_deck"
+    ],
+    "S03-ROW021": [
+      "board.to_hand"
+    ],
+    "S03-ROW022": [
+      "hand.draw"
+    ],
+    "S03-ROW023": [
+      "hand.draw"
+    ],
+    "S03-ROW024": [
+      "hand.draw"
+    ],
+    "S03-ROW025": [
+      "defense.block_plus"
+    ],
+    "S03-ROW026": [
+      "hand.draw"
+    ],
+    "S03-ROW027": [
+      "attack.ready",
+      "defense.ready"
+    ],
+    "S03-ROW028": [
+      "board.to_magic",
+      "board.face_down",
+      "deploy.hand_to_field",
+      "deploy.grave_to_field",
+      "magic.special_place",
+      "grave.to_field"
+    ],
+    "S03-ROW029": [
+      "magic.special_place",
+      "hand.draw"
+    ],
+    "S03-ROW030": [
+      "deploy.hand_to_field",
+      "deploy.grave_to_field",
+      "magic.deck_to_zone",
+      "magic.special_place",
+      "grave.to_field"
+    ],
+    "S03-ROW031": [
+      "magic.deck_to_zone",
+      "magic.special_place"
+    ],
+    "S03-ROW032": [
+      "board.lose_abilities",
+      "interference.lose_abilities"
+    ],
+    "S03-ROW033": [
+      "deploy.maryoku_right"
+    ],
+    "S03-ROW034": [
+      "attack.ready",
+      "defense.ready",
+      "hand.draw"
+    ],
+    "S03-ROW035": [
+      "deploy.summon_right",
+      "magic.grave_to_zone",
+      "grave.to_magic"
+    ],
+    "S03-ROW036": [
+      "deploy.grave_to_field",
+      "grave.to_field",
+      "deck.top_bottom_place",
+      "deck.field_to_deck"
+    ],
+    "S03-ROW037": [
+      "hand.draw",
+      "deck.hand_to_deck"
+    ],
+    "S03-ROW038": [
+      "board.to_deck",
+      "deploy.summon_right"
+    ],
+    "S03-ROW039": [
+      "deploy.grave_to_field",
+      "grave.to_field",
+      "deck.top_bottom_place",
+      "deck.field_to_deck"
+    ],
+    "S03-ROW040": [
+      "defense.watcher",
+      "magic.grave_to_zone",
+      "grave.to_magic",
+      "deck.look_bottom",
+      "deck.top_bottom_place"
+    ],
+    "S03-ROW041": [
+      "board.to_deck",
+      "deck.top_bottom_place"
+    ],
+    "S03-ROW042": [
+      "board.to_deck",
+      "hand.deck_to_hand",
+      "deck.conditional_to_hand",
+      "deck.top_bottom_place"
+    ],
+    "S03-ROW043": [],
+    "S03-ROW044": [
+      "interference.hand_discard",
+      "grave.hand_to_grave",
+      "hand.draw",
+      "hand.opponent_choice_discard"
+    ],
+    "S03-ROW045": [
+      "deploy.hand_to_field",
+      "deploy.grave_to_field",
+      "grave.to_field",
+      "hand.draw"
+    ],
+    "S03-ROW046": [
+      "deploy.hand_to_field"
+    ],
+    "S03-ROW047": [
+      "attack.quick",
+      "attack.pressure"
+    ],
+    "S03-ROW048": [
+      "interference.hand_discard",
+      "hand.draw",
+      "hand.opponent_choice_discard"
+    ],
+    "S03-ROW049": [],
+    "S03-ROW050": [
+      "deploy.deck_to_field"
+    ],
+    "S03-ROW051": [
+      "defense.watcher",
+      "magic.grave_to_zone",
+      "grave.to_magic"
+    ],
+    "S03-ROW052": [
+      "defense.cannot_leave",
+      "hand.draw"
+    ],
+    "S03-ROW053": [
+      "attack.attack_plus"
+    ],
+    "S03-ROW054": [
+      "defense.block_plus",
+      "defense.indestructible",
+      "defense.effect_indestructible"
+    ],
+    "S03-ROW055": [
+      "hand.draw"
+    ],
+    "S03-ROW056": [
+      "hand.draw"
+    ],
+    "S03-ROW057": [
+      "deploy.hand_to_field",
+      "deploy.grave_to_field",
+      "grave.to_field"
+    ],
+    "S03-ROW058": [
+      "magic.deck_to_zone",
+      "magic.special_place"
+    ],
+    "S03-ROW059": [
+      "board.prevent_activation",
+      "interference.prevent_activation",
+      "deploy.summon_right"
+    ],
+    "S03-ROW060": [
+      "board.prevent_activation",
+      "interference.prevent_activation",
+      "grave.hand_to_grave"
+    ],
+    "S03-ROW061": [
+      "attack.guardian_remove",
+      "board.destroy",
+      "board.to_hand",
+      "grave.hand_to_grave"
+    ],
+    "S03-ROW062": [
+      "board.destroy",
+      "board.prevent_activation",
+      "interference.prevent_activation",
+      "magic.grave_to_zone",
+      "grave.to_magic",
+      "grave.legacy_support"
+    ],
+    "S03-ROW063": [
+      "attack.attack_plus",
+      "magic.grave_to_zone",
+      "grave.to_magic",
+      "hand.draw"
+    ],
+    "S03-ROW064": [
+      "deploy.lower_use_level",
+      "magic.lower_use_level",
+      "hand.draw",
+      "hand.redraw",
+      "deck.shuffle",
+      "deck.hand_to_deck"
+    ],
+    "S03-ROW065": [
+      "defense.block_plus",
+      "magic.grave_to_zone",
+      "grave.to_magic",
+      "hand.draw"
+    ],
+    "S03-ROW066": [
+      "magic.special_place"
+    ],
+    "S03-ROW067": [
+      "attack.power_plus",
+      "magic.grave_to_zone",
+      "grave.to_magic",
+      "hand.draw"
+    ],
+    "S03-ROW068": [
+      "deck.top_bottom_place"
+    ],
+    "S03-ROW069": [
+      "defense.watcher",
+      "defense.block_plus",
+      "magic.grave_to_zone",
+      "grave.to_magic",
+      "hand.draw"
+    ],
+    "S03-ROW070": [
+      "win.deck_attack",
+      "grave.deck_to_grave",
+      "grave.to_hand",
+      "hand.grave_to_hand",
+      "deck.self_mill",
+      "deck.opponent_mill"
+    ],
+    "S03-ROW071": [
+      "attack.pressure",
+      "attack.attack_plus",
+      "magic.grave_to_zone",
+      "grave.to_magic",
+      "hand.draw"
+    ],
+    "S03-ROW072": [
+      "magic.deck_to_zone",
+      "magic.grave_to_zone",
+      "grave.to_magic"
+    ],
+    "S03-ROW073": [
+      "magic.deck_to_zone",
+      "magic.grave_to_zone",
+      "grave.to_magic"
+    ],
+    "S03-ROW074": [
+      "magic.deck_to_zone",
+      "magic.grave_to_zone",
+      "grave.to_magic"
+    ],
+    "S03-ROW075": [
+      "magic.deck_to_zone",
+      "magic.grave_to_zone",
+      "grave.to_magic"
+    ],
+    "S03-ROW076": [
+      "magic.deck_to_zone",
+      "magic.grave_to_zone",
+      "grave.to_magic"
+    ],
+    "S03-ROW077": [
+      "attack.quick",
+      "attack.pressure",
+      "magic.grave_to_zone",
+      "grave.to_magic"
+    ],
+    "S03-ROW078": [],
+    "S03-ROW079": [],
+    "S03-ROW080": [
+      "magic.grave_to_zone",
+      "grave.to_magic",
+      "hand.draw"
+    ],
+    "S03-ROW081": [
+      "magic.grave_to_zone",
+      "grave.to_magic"
+    ],
+    "S03-ROW082": [
+      "deploy.summon_right",
+      "hand.draw"
+    ],
+    "S03-ROW083": [
+      "interference.hand_discard",
+      "deploy.hand_to_field",
+      "deploy.grave_to_field",
+      "grave.hand_to_grave",
+      "grave.to_field",
+      "hand.opponent_choice_discard"
+    ],
+    "S03-ROW084": [
+      "magic.grave_to_zone",
+      "grave.to_magic"
+    ],
+    "S03-ROW085": [
+      "hand.draw",
+      "deck.top_bottom_place"
+    ],
+    "S03-ROW086": [
+      "grave.deck_to_grave",
+      "deck.self_mill"
+    ],
+    "S03-ROW087": [
+      "grave.hand_to_grave",
+      "hand.draw"
+    ],
+    "S03-ROW088": [
+      "deploy.hand_to_field",
+      "deploy.grave_to_field",
+      "grave.to_field",
+      "hand.draw"
+    ],
+    "S03-ROW089": [
+      "attack.quick",
+      "attack.power_plus",
+      "grave.count_threshold",
+      "grave.opponent_reference"
+    ],
+    "S03-ROW090": [],
+    "S03-ROW091": [
+      "hand.convert",
+      "deck.top_bottom_place"
+    ],
+    "S03-ROW092": [
+      "deploy.summon_right",
+      "deploy.maryoku_right",
+      "grave.deck_to_grave",
+      "hand.draw",
+      "deck.self_mill"
+    ],
+    "S03-ROW093": [
+      "win.deck_attack",
+      "deploy.maryoku_right",
+      "magic.grave_to_zone",
+      "grave.to_magic",
+      "deck.opponent_mill"
+    ],
+    "S03-ROW094": [
+      "magic.special_place"
+    ],
+    "S03-ROW095": [
+      "hand.draw"
+    ],
+    "S03-ROW096": [
+      "attack.power_plus",
+      "magic.grave_to_zone",
+      "grave.to_magic"
+    ],
+    "S03-ROW097": [
+      "magic.grave_to_zone",
+      "grave.to_magic"
+    ],
+    "S03-ROW098": [
+      "magic.grave_to_zone",
+      "grave.to_magic"
+    ],
+    "S04-ROW002": [
+      "attack.mortal",
+      "attack.attack_plus"
+    ],
+    "S04-ROW003": [
+      "magic.grave_to_zone",
+      "grave.to_magic"
+    ],
+    "S04-ROW004": [
+      "attack.guardian_remove",
+      "defense.indestructible",
+      "board.to_hand",
+      "hand.draw"
+    ],
+    "S04-ROW005": [
+      "grave.hand_to_grave"
+    ],
+    "S04-ROW006": [
+      "board.lose_abilities",
+      "interference.lose_abilities",
+      "interference.enter_sleeping",
+      "deploy.grave_to_field",
+      "grave.to_field",
+      "deck.field_to_deck"
+    ],
+    "S04-ROW007": [
+      "deploy.maryoku_right",
+      "deploy.ignore_color",
+      "magic.ignore_color",
+      "grave.to_hand",
+      "hand.draw",
+      "hand.grave_to_hand"
+    ],
+    "S04-ROW008": [
+      "magic.grave_to_zone",
+      "magic.add_colors",
+      "grave.deck_to_grave",
+      "grave.to_magic",
+      "deck.self_mill"
+    ],
+    "S04-ROW009": [
+      "defense.watcher",
+      "deploy.lower_ijin_level",
+      "magic.grave_to_zone",
+      "grave.to_hand",
+      "grave.to_magic",
+      "grave.count_threshold",
+      "hand.grave_to_hand"
+    ],
+    "S04-ROW010": [
+      "win.deck_attack",
+      "attack.quick",
+      "attack.mortal",
+      "grave.count_threshold",
+      "deck.opponent_mill"
+    ],
+    "S04-ROW011": [
+      "board.face_down",
+      "deploy.lower_ijin_level"
+    ],
+    "S04-ROW012": [
+      "deploy.summon_right",
+      "deploy.lower_ijin_level",
+      "hand.draw"
+    ],
+    "S04-ROW013": [
+      "attack.attack_plus",
+      "hand.draw"
+    ],
+    "S04-ROW014": [
+      "attack.unblockable"
+    ],
+    "S04-ROW015": [],
+    "S04-ROW016": [
+      "deploy.grave_to_field",
+      "grave.to_field",
+      "deck.field_to_deck"
+    ],
+    "S04-ROW017": [
+      "attack.attack_plus",
+      "board.destroy"
+    ],
+    "S04-ROW018": [
+      "attack.quick",
+      "defense.watcher"
+    ],
+    "S04-ROW019": [
+      "deploy.hand_to_field",
+      "deploy.grave_to_field",
+      "grave.to_field"
+    ],
+    "S04-ROW020": [
+      "hand.draw"
+    ],
+    "S04-ROW021": [
+      "board.sleep",
+      "board.lose_abilities",
+      "interference.lose_abilities",
+      "hand.draw"
+    ],
+    "S04-ROW022": [
+      "defense.block_plus",
+      "board.sleep",
+      "hand.draw"
+    ],
+    "S04-ROW023": [
+      "hand.draw"
+    ],
+    "S04-ROW024": [
+      "attack.pressure",
+      "attack.ready",
+      "defense.ready",
+      "hand.draw"
+    ],
+    "S04-ROW025": [
+      "attack.guardian_remove",
+      "hand.draw"
+    ],
+    "S04-ROW026": [],
+    "S04-ROW027": [
+      "hand.draw"
+    ],
+    "S04-ROW028": [
+      "magic.deck_to_zone",
+      "magic.special_place",
+      "hand.draw"
+    ],
+    "S04-ROW029": [
+      "grave.hand_to_grave",
+      "hand.draw",
+      "hand.draw_discard"
+    ],
+    "S04-ROW030": [
+      "grave.to_deck",
+      "hand.draw",
+      "deck.grave_to_deck"
+    ],
+    "S04-ROW031": [
+      "grave.hand_to_grave",
+      "hand.draw"
+    ],
+    "S04-ROW032": [
+      "board.to_deck",
+      "deploy.summon_right",
+      "hand.draw"
+    ],
+    "S04-ROW033": [
+      "hand.draw"
+    ],
+    "S04-ROW034": [
+      "board.destroy",
+      "board.prevent_activation",
+      "interference.prevent_activation",
+      "deploy.hand_to_field",
+      "deploy.grave_to_field",
+      "deploy.lower_ijin_level",
+      "grave.to_field",
+      "grave.count_threshold"
+    ],
+    "S04-ROW035": [
+      "attack.power_plus",
+      "defense.watcher",
+      "hand.draw"
+    ],
+    "S04-ROW036": [
+      "win.deck_attack",
+      "hand.draw",
+      "deck.opponent_mill"
+    ],
+    "S04-ROW037": [
+      "win.special_outcome",
+      "magic.deck_to_zone",
+      "grave.count_threshold",
+      "hand.draw"
+    ],
+    "S04-ROW038": [
+      "deploy.deck_to_field",
+      "deploy.grave_to_field",
+      "grave.to_field",
+      "deck.field_to_deck"
+    ],
+    "S04-ROW039": [
+      "win.deck_attack",
+      "board.to_deck",
+      "hand.draw",
+      "deck.shuffle",
+      "deck.opponent_mill"
+    ],
+    "S04-ROW040": [
+      "win.deck_attack",
+      "deck.opponent_mill"
+    ],
+    "S04-ROW041": [
+      "attack.guardian_remove",
+      "board.destroy"
+    ],
+    "S04-ROW042": [
+      "hand.draw"
+    ],
+    "S04-ROW043": [
+      "hand.draw"
+    ],
+    "S04-ROW044": [
+      "attack.unblockable",
+      "magic.add_colors"
+    ],
+    "S04-ROW045": [
+      "grave.deck_to_grave",
+      "grave.to_hand",
+      "grave.to_deck",
+      "hand.grave_to_hand",
+      "deck.top_bottom_place",
+      "deck.grave_to_deck",
+      "deck.self_mill"
+    ],
+    "S04-ROW046": [
+      "deploy.lower_ijin_level"
+    ],
+    "S04-ROW047": [
+      "win.special_outcome",
+      "deploy.lower_use_level",
+      "magic.grave_to_zone",
+      "grave.to_magic"
+    ],
+    "S04-ROW048": [
+      "board.destroy",
+      "hand.draw"
+    ],
+    "S04-ROW049": [
+      "deck.top_bottom_place"
+    ],
+    "S04-ROW050": [
+      "board.lose_abilities",
+      "interference.lose_abilities"
+    ],
+    "S04-ROW051": [
+      "board.destroy"
+    ],
+    "S04-ROW052": [],
+    "S04-ROW053": [
+      "grave.hand_to_grave",
+      "hand.draw"
+    ],
+    "S04-ROW054": [
+      "grave.hand_to_grave",
+      "hand.draw"
+    ],
+    "S04-ROW055": [
+      "interference.hand_discard",
+      "hand.look_choose_discard"
+    ],
+    "S04-ROW056": [
+      "magic.grave_to_zone",
+      "grave.to_magic"
+    ],
+    "S04-ROW057": [
+      "magic.grave_to_zone",
+      "grave.to_magic",
+      "hand.draw"
+    ],
+    "S04-ROW058": [
+      "grave.to_deck",
+      "grave.opponent_reference",
+      "hand.deck_to_hand",
+      "deck.conditional_to_hand",
+      "deck.top_bottom_place",
+      "deck.shuffle",
+      "deck.grave_to_deck",
+      "deck.field_to_deck"
+    ],
+    "S04-ROW059": [
+      "attack.guardian_remove",
+      "board.to_hand"
+    ],
+    "S04-ROW060": [
+      "deploy.summon_right",
+      "magic.grave_to_zone",
+      "grave.to_magic"
+    ],
+    "S04-ROW061": [
+      "interference.hand_discard",
+      "hand.look_choose_discard"
+    ],
+    "S04-ROW062": [
+      "board.destroy",
+      "hand.draw"
+    ],
+    "S04-ROW063": [
+      "grave.hand_to_grave",
+      "hand.draw",
+      "hand.draw_discard"
+    ],
+    "S04-ROW064": [
+      "magic.field_to_zone",
+      "magic.special_place",
+      "hand.draw"
+    ],
+    "S04-ROW065": [
+      "hand.draw"
+    ],
+    "S04-ROW066": [
+      "hand.draw"
+    ],
+    "S04-ROW067": [
+      "attack.guardian_remove",
+      "board.destroy",
+      "deck.field_to_deck"
+    ],
+    "S04-ROW068": [
+      "deploy.lower_ijin_level"
+    ],
+    "S04-ROW069": [
+      "deck.field_to_deck"
+    ],
+    "S04-ROW070": [
+      "deploy.lower_ijin_level"
+    ],
+    "S04-ROW071": [
+      "deck.field_to_deck"
+    ],
+    "S04-ROW072": [
+      "deploy.lower_ijin_level"
+    ],
+    "S04-ROW073": [
+      "interference.no_battle",
+      "magic.grave_to_zone",
+      "grave.to_magic",
+      "deck.top_bottom_place"
+    ],
+    "S04-ROW074": [
+      "deploy.lower_ijin_level"
+    ],
+    "S04-ROW075": [
+      "interference.no_battle",
+      "magic.grave_to_zone",
+      "grave.to_magic",
+      "deck.top_bottom_place"
+    ],
+    "S04-ROW076": [
+      "deploy.lower_ijin_level"
+    ],
+    "S04-ROW077": [
+      "hand.draw"
+    ],
+    "S04-ROW078": [
+      "magic.grave_to_zone",
+      "grave.to_magic"
+    ],
+    "S04-ROW079": [
+      "defense.cannot_leave",
+      "magic.grave_to_zone",
+      "grave.to_magic"
+    ],
+    "S04-ROW080": [
+      "magic.grave_to_zone",
+      "grave.to_magic"
+    ],
+    "S04-ROW081": [
+      "magic.grave_to_zone",
+      "magic.add_colors",
+      "grave.to_magic"
+    ],
+    "S04-ROW082": [
+      "board.face_down",
+      "deploy.lower_ijin_level"
+    ],
+    "S05-ROW002": [
+      "attack.pressure",
+      "attack.attack_plus",
+      "hand.draw"
+    ],
+    "S05-ROW003": [
+      "board.destroy",
+      "hand.draw"
+    ],
+    "S05-ROW004": [
+      "attack.guardian_sleep",
+      "defense.enemy_sleep",
+      "board.sleep"
+    ],
+    "S05-ROW005": [
+      "attack.unblockable",
+      "attack.pressure"
+    ],
+    "S05-ROW006": [
+      "board.lose_abilities",
+      "interference.lose_abilities"
+    ],
+    "S05-ROW007": [
+      "board.to_magic",
+      "hand.draw"
+    ],
+    "S05-ROW008": [
+      "attack.attack_plus",
+      "hand.draw"
+    ],
+    "S05-ROW009": [
+      "interference.limit_magic_haikei",
+      "hand.draw"
+    ],
+    "S05-ROW010": [
+      "attack.pressure",
+      "board.destroy",
+      "hand.draw"
+    ],
+    "S05-ROW011": [
+      "hand.draw"
+    ],
+    "S05-ROW012": [
+      "attack.pressure"
+    ],
+    "S05-ROW013": [
+      "board.destroy",
+      "hand.draw"
+    ],
+    "S05-ROW014": [
+      "attack.quick"
+    ],
+    "S05-ROW015": [],
+    "S05-ROW016": [
+      "attack.attack_plus",
+      "grave.to_hand",
+      "hand.grave_to_hand"
+    ],
+    "S05-ROW017": [
+      "board.destroy",
+      "hand.draw"
+    ],
+    "S05-ROW018": [
+      "attack.attack_plus",
+      "board.destroy"
+    ],
+    "S05-ROW019": [
+      "board.lose_abilities",
+      "interference.lose_abilities",
+      "hand.draw"
+    ],
+    "S05-ROW020": [
+      "attack.quick",
+      "board.destroy"
+    ],
+    "S05-ROW021": [
+      "board.prevent_activation",
+      "interference.prevent_activation",
+      "magic.grave_to_zone",
+      "magic.special_place",
+      "grave.to_magic",
+      "grave.legacy_support"
+    ],
+    "S05-ROW022": [
+      "attack.power_plus",
+      "board.prevent_activation",
+      "interference.prevent_activation",
+      "hand.draw"
+    ],
+    "S05-ROW023": [
+      "attack.quick",
+      "hand.draw"
+    ],
+    "S05-ROW024": [
+      "deploy.magic_to_field",
+      "hand.draw"
+    ],
+    "S05-ROW025": [
+      "attack.pressure",
+      "defense.enemy_sleep",
+      "board.sleep",
+      "hand.draw"
+    ],
+    "S05-ROW026": [
+      "defense.enemy_sleep",
+      "board.sleep",
+      "hand.draw"
+    ],
+    "S05-ROW027": [
+      "board.to_hand",
+      "hand.draw"
+    ],
+    "S05-ROW028": [
+      "attack.pressure",
+      "deploy.summon_right"
+    ],
+    "S05-ROW029": [
+      "interference.hand_discard",
+      "hand.draw",
+      "hand.look_choose_discard"
+    ],
+    "S05-ROW030": [
+      "interference.hand_discard",
+      "hand.opponent_choice_discard"
+    ],
+    "S05-ROW031": [
+      "defense.block_plus",
+      "hand.draw"
+    ],
+    "S05-ROW032": [
+      "magic.deck_to_zone",
+      "magic.special_place"
+    ],
+    "S05-ROW033": [],
+    "S05-ROW034": [
+      "magic.deck_to_zone",
+      "magic.special_place",
+      "hand.draw"
+    ],
+    "S05-ROW035": [
+      "attack.pressure",
+      "deploy.summon_right",
+      "magic.grave_to_zone",
+      "magic.special_place",
+      "grave.to_magic"
+    ],
+    "S05-ROW036": [
+      "hand.draw"
+    ],
+    "S05-ROW037": [
+      "attack.pressure",
+      "hand.draw"
+    ],
+    "S05-ROW038": [
+      "deploy.summon_right"
+    ],
+    "S05-ROW039": [
+      "board.lose_abilities",
+      "interference.lose_abilities",
+      "magic.grave_to_zone",
+      "magic.special_place",
+      "grave.to_magic"
+    ],
+    "S05-ROW040": [
+      "magic.grave_to_zone",
+      "magic.special_place",
+      "grave.to_magic"
+    ],
+    "S05-ROW041": [],
+    "S05-ROW042": [
+      "attack.attack_plus",
+      "defense.watcher",
+      "board.destroy",
+      "hand.draw"
+    ],
+    "S05-ROW043": [
+      "interference.no_extra_rights",
+      "hand.draw"
+    ],
+    "S05-ROW044": [
+      "deploy.summon_right",
+      "hand.draw"
+    ],
+    "S05-ROW045": [
+      "attack.pressure"
+    ],
+    "S05-ROW046": [
+      "grave.to_hand",
+      "hand.draw",
+      "hand.grave_to_hand"
+    ],
+    "S05-ROW047": [
+      "defense.watcher",
+      "hand.draw"
+    ],
+    "S05-ROW048": [
+      "defense.watcher",
+      "hand.draw"
+    ],
+    "S05-ROW049": [
+      "hand.draw"
+    ],
+    "S05-ROW050": [
+      "attack.pressure"
+    ],
+    "S05-ROW051": [
+      "attack.unblockable",
+      "hand.draw"
+    ],
+    "S05-ROW052": [
+      "attack.power_plus",
+      "hand.draw"
+    ],
+    "S05-ROW053": [
+      "attack.guardian_remove",
+      "board.to_hand",
+      "grave.deck_to_grave",
+      "hand.draw",
+      "deck.self_mill"
+    ],
+    "S05-ROW054": [],
+    "S05-ROW055": [
+      "hand.draw"
+    ],
+    "S05-ROW056": [
+      "hand.draw"
+    ],
+    "S05-ROW057": [
+      "win.deck_attack",
+      "deck.opponent_mill"
+    ],
+    "S05-ROW058": [
+      "board.destroy"
+    ],
+    "S05-ROW059": [
+      "grave.opponent_reference"
+    ],
+    "S05-ROW060": [
+      "attack.quick",
+      "attack.power_plus",
+      "attack.guardian_remove",
+      "board.destroy",
+      "grave.count_threshold",
+      "grave.opponent_reference"
+    ],
+    "S05-ROW061": [
+      "magic.grave_to_zone",
+      "magic.special_place",
+      "grave.to_magic"
+    ],
+    "S05-ROW062": [
+      "deploy.summon_right",
+      "hand.draw"
+    ],
+    "S05-ROW063": [
+      "magic.grave_to_zone",
+      "magic.special_place",
+      "grave.to_magic",
+      "hand.draw",
+      "deck.order"
+    ],
+    "S05-ROW064": [
+      "magic.field_to_zone",
+      "magic.grave_to_zone",
+      "magic.special_place",
+      "grave.to_magic"
+    ],
+    "S05-ROW065": [],
+    "S05-ROW066": [
+      "grave.count_threshold",
+      "grave.opponent_reference"
+    ],
+    "S05-ROW067": [
+      "hand.draw"
+    ],
+    "S05-ROW068": [
+      "magic.grave_to_zone",
+      "magic.special_place",
+      "grave.to_magic"
+    ],
+    "S05-ROW069": [
+      "magic.grave_to_zone",
+      "magic.special_place",
+      "grave.to_magic"
+    ],
+    "S05-ROW070": [
+      "attack.ready",
+      "attack.power_plus",
+      "defense.ready",
+      "magic.grave_to_zone",
+      "magic.special_place",
+      "grave.to_magic"
+    ],
+    "S05-ROW071": [
+      "interference.hand_discard",
+      "grave.hand_to_grave",
+      "deck.shuffle",
+      "deck.hand_to_deck"
+    ],
+    "S05-ROW072": [
+      "grave.deck_to_grave",
+      "grave.active_in_grave",
+      "grave.legacy_support",
+      "deck.self_mill"
+    ],
+    "S05-ROW073": [
+      "grave.active_in_grave"
+    ],
+    "S05-ROW074": [
+      "deploy.summon_right",
+      "deploy.maryoku_right"
+    ],
+    "S05-ROW075": [
+      "win.deck_attack",
+      "board.destroy",
+      "deck.opponent_mill"
+    ],
+    "S05-ROW076": [
+      "hand.draw"
+    ],
+    "S05-ROW077": [],
+    "S05-ROW078": [],
+    "S05-ROW079": [
+      "hand.draw"
+    ],
+    "S05-ROW080": [],
+    "S05-ROW081": [
+      "deck.top_bottom_place"
+    ],
+    "S05-ROW082": [
+      "hand.draw"
+    ],
+    "S05-ROW083": [
+      "board.to_magic",
+      "magic.special_place"
+    ],
+    "S05-ROW084": [
+      "magic.special_place"
+    ],
+    "S05-ROW085": [
+      "deploy.deck_to_field",
+      "magic.grave_to_zone",
+      "magic.special_place",
+      "grave.to_magic"
+    ],
+    "S05-ROW086": [
+      "deck.top_bottom_place",
+      "deck.order"
+    ],
+    "S05-ROW087": [
+      "deploy.grave_to_field",
+      "grave.deck_to_grave",
+      "grave.to_field",
+      "deck.self_mill"
+    ],
+    "S05-ROW088": [
+      "grave.count_threshold",
+      "grave.opponent_reference",
+      "hand.draw",
+      "deck.order"
+    ],
+    "S05-ROW089": [
+      "interference.hand_discard",
+      "magic.grave_to_zone",
+      "magic.special_place",
+      "grave.to_magic"
+    ],
+    "S05-ROW090": [
+      "win.deck_attack",
+      "magic.grave_to_zone",
+      "magic.special_place",
+      "grave.to_magic",
+      "deck.opponent_mill"
+    ],
+    "S05-ROW091": [
+      "magic.grave_to_zone",
+      "magic.special_place",
+      "grave.to_magic"
+    ],
+    "S05-ROW092": [
+      "magic.grave_to_zone",
+      "grave.to_magic"
+    ],
+    "S05-ROW093": [
+      "magic.grave_to_zone",
+      "grave.to_magic"
+    ],
+    "S05-ROW094": [
+      "magic.grave_to_zone",
+      "grave.to_magic"
+    ],
+    "S05-ROW095": [
+      "magic.grave_to_zone",
+      "grave.to_magic"
+    ],
+    "S05-ROW096": [
+      "magic.grave_to_zone",
+      "grave.to_magic"
+    ],
+    "S05-ROW097": [
+      "magic.grave_to_zone",
+      "grave.to_magic"
+    ],
+    "S05-ROW098": [
+      "magic.grave_to_zone",
+      "grave.to_magic"
+    ],
+    "S05-ROW099": [
+      "magic.grave_to_zone",
+      "grave.to_magic"
+    ],
+    "S05-ROW100": [
+      "magic.grave_to_zone",
+      "grave.to_magic"
+    ],
+    "S05-ROW101": [
+      "magic.grave_to_zone",
+      "grave.to_magic"
+    ],
+    "S05-ROW102": [
+      "board.prevent_activation",
+      "interference.prevent_activation",
+      "magic.grave_to_zone",
+      "magic.zone_effect",
+      "grave.to_magic"
+    ],
+    "S05-ROW103": [
+      "board.prevent_activation",
+      "interference.prevent_activation",
+      "magic.grave_to_zone",
+      "magic.zone_effect",
+      "grave.to_magic"
+    ],
+    "S05-ROW104": [
+      "board.prevent_activation",
+      "interference.prevent_activation",
+      "magic.grave_to_zone",
+      "magic.zone_effect",
+      "grave.to_magic"
+    ],
+    "S05-ROW105": [
+      "board.prevent_activation",
+      "interference.prevent_activation",
+      "magic.grave_to_zone",
+      "magic.zone_effect",
+      "grave.to_magic"
+    ],
+    "S05-ROW106": [
+      "board.prevent_activation",
+      "interference.prevent_activation",
+      "magic.grave_to_zone",
+      "magic.zone_effect",
+      "grave.to_magic"
+    ],
+    "S05-ROW107": [
+      "magic.grave_to_zone",
+      "grave.to_magic"
+    ],
+    "S05-ROW108": [
+      "magic.grave_to_zone",
+      "magic.zone_effect",
+      "grave.to_magic"
+    ],
+    "S05-ROW109": [
+      "magic.grave_to_zone",
+      "grave.to_magic",
+      "hand.draw",
+      "deck.top_bottom_place"
+    ],
+    "S05-ROW110": [
+      "magic.grave_to_zone",
+      "grave.to_magic",
+      "hand.draw"
+    ],
+    "S05-ROW111": [
+      "attack.pressure",
+      "attack.attack_plus",
+      "hand.draw"
+    ],
+    "S05-ROW112": [
+      "board.destroy",
+      "hand.draw"
+    ],
+    "S06-ROW002": [
+      "board.destroy"
+    ],
+    "S06-ROW003": [
+      "board.destroy"
+    ],
+    "S06-ROW004": [
+      "grave.active_in_grave"
+    ],
+    "S06-ROW005": [
+      "hand.draw"
+    ],
+    "S06-ROW006": [
+      "deploy.summon_right",
+      "deploy.maryoku_right",
+      "hand.draw"
+    ],
+    "S06-ROW007": [
+      "defense.enemy_sleep",
+      "board.sleep",
+      "hand.draw"
+    ],
+    "S06-ROW008": [
+      "attack.quick",
+      "attack.pressure",
+      "grave.count_threshold",
+      "hand.draw"
+    ],
+    "S06-ROW009": [
+      "attack.unblockable"
+    ],
+    "S06-ROW010": [
+      "interference.no_draw",
+      "hand.draw"
+    ],
+    "S06-ROW011": [
+      "deploy.hand_to_field",
+      "hand.deck_to_hand",
+      "deck.conditional_to_hand",
+      "deck.shuffle",
+      "deck.hand_to_deck"
+    ],
+    "S06-ROW012": [],
+    "S06-ROW013": [
+      "attack.quick",
+      "attack.pressure",
+      "attack.power_plus",
+      "grave.count_threshold",
+      "grave.opponent_reference"
+    ],
+    "S06-ROW014": [
+      "attack.attack_plus",
+      "board.destroy",
+      "deploy.summon_right",
+      "magic.grave_to_zone",
+      "magic.special_place",
+      "grave.to_magic"
+    ],
+    "S06-ROW015": [
+      "attack.pressure",
+      "hand.draw"
+    ],
+    "S06-ROW016": [
+      "attack.power_plus",
+      "hand.draw"
+    ],
+    "S06-ROW017": [
+      "defense.power_minus",
+      "hand.draw"
+    ],
+    "S06-ROW018": [],
+    "S06-ROW019": [
+      "attack.power_plus"
+    ],
+    "S06-ROW020": [
+      "defense.enemy_sleep",
+      "board.sleep",
+      "hand.draw"
+    ],
+    "S06-ROW021": [
+      "interference.limit_magic_haikei",
+      "interference.magic_cost_up",
+      "grave.count_threshold",
+      "hand.draw"
+    ],
+    "S06-ROW022": [
+      "deploy.deck_to_field",
+      "hand.draw",
+      "deck.conditional_to_field"
+    ],
+    "S06-ROW023": [],
+    "S06-ROW024": [
+      "attack.unblockable",
+      "hand.draw"
+    ],
+    "S06-ROW025": [
+      "defense.power_minus",
+      "hand.draw"
+    ],
+    "S06-ROW026": [],
+    "S06-ROW027": [
+      "attack.quick",
+      "hand.draw"
+    ],
+    "S06-ROW028": [
+      "defense.watcher",
+      "hand.draw"
+    ],
+    "S06-ROW029": [
+      "hand.draw"
+    ],
+    "S06-ROW030": [
+      "attack.quick",
+      "attack.pressure"
+    ],
+    "S06-ROW031": [
+      "defense.block_plus",
+      "hand.draw"
+    ],
+    "S06-ROW032": [
+      "defense.power_minus",
+      "hand.draw"
+    ],
+    "S06-ROW033": [
+      "attack.pressure"
+    ],
+    "S06-ROW034": [
+      "attack.unblockable",
+      "attack.pressure",
+      "hand.draw"
+    ],
+    "S06-ROW035": [
+      "magic.grave_to_zone",
+      "magic.special_place",
+      "grave.to_magic"
+    ],
+    "S06-ROW036": [
+      "attack.power_plus"
+    ],
+    "S06-ROW037": [
+      "defense.watcher",
+      "hand.draw"
+    ],
+    "S06-ROW038": [
+      "defense.indestructible",
+      "deploy.summon_right",
+      "hand.draw"
+    ],
+    "S06-ROW039": [
+      "defense.watcher",
+      "defense.block_plus"
+    ],
+    "S06-ROW040": [
+      "hand.draw"
+    ],
+    "S06-ROW041": [
+      "attack.pressure",
+      "hand.draw"
+    ],
+    "S06-ROW042": [
+      "attack.unblockable",
+      "hand.draw"
+    ],
+    "S06-ROW043": [
+      "defense.power_minus",
+      "hand.draw"
+    ],
+    "S06-ROW044": [
+      "attack.quick"
+    ],
+    "S06-ROW045": [
+      "attack.power_plus",
+      "magic.grave_to_zone",
+      "magic.special_place",
+      "grave.to_magic"
+    ],
+    "S06-ROW046": [
+      "interference.hand_discard",
+      "hand.opponent_choice_discard"
+    ],
+    "S06-ROW047": [
+      "magic.deck_to_zone",
+      "magic.grave_to_zone",
+      "magic.special_place",
+      "grave.to_magic"
+    ],
+    "S06-ROW048": [
+      "grave.active_in_grave",
+      "grave.legacy_support"
+    ],
+    "S06-ROW049": [
+      "defense.power_minus"
+    ],
+    "S06-ROW050": [
+      "board.destroy"
+    ],
+    "S06-ROW051": [
+      "defense.indestructible",
+      "defense.effect_indestructible",
+      "grave.active_in_grave"
+    ],
+    "S06-ROW052": [],
+    "S06-ROW053": [
+      "grave.hand_to_grave",
+      "hand.convert"
+    ],
+    "S06-ROW054": [],
+    "S06-ROW055": [
+      "grave.hand_to_grave",
+      "hand.draw",
+      "hand.draw_discard"
+    ],
+    "S06-ROW056": [],
+    "S06-ROW057": [],
+    "S06-ROW058": [],
+    "S06-ROW059": [
+      "hand.draw"
+    ],
+    "S06-ROW060": [
+      "magic.deck_to_zone",
+      "magic.special_place",
+      "grave.to_deck",
+      "grave.count_threshold",
+      "deck.shuffle",
+      "deck.grave_to_deck"
+    ],
+    "S06-ROW061": [
+      "grave.hand_to_grave",
+      "hand.draw",
+      "hand.draw_discard"
+    ],
+    "S06-ROW062": [
+      "grave.hand_to_grave",
+      "hand.draw",
+      "hand.draw_discard"
+    ],
+    "S06-ROW063": [
+      "grave.hand_to_grave",
+      "hand.draw",
+      "hand.draw_discard"
+    ],
+    "S06-ROW064": [
+      "grave.hand_to_grave",
+      "hand.draw",
+      "hand.draw_discard"
+    ],
+    "S06-ROW065": [
+      "grave.hand_to_grave",
+      "hand.draw",
+      "hand.draw_discard"
+    ],
+    "S06-ROW066": [
+      "magic.grave_to_zone",
+      "grave.to_magic",
+      "hand.draw"
+    ],
+    "S06-ROW067": [
+      "magic.grave_to_zone",
+      "grave.to_magic",
+      "hand.draw"
+    ],
+    "S06-ROW068": [
+      "magic.grave_to_zone",
+      "grave.to_magic",
+      "hand.draw"
+    ],
+    "S06-ROW069": [
+      "magic.grave_to_zone",
+      "grave.to_magic",
+      "hand.draw"
+    ],
+    "S06-ROW070": [
+      "magic.grave_to_zone",
+      "grave.to_magic",
+      "hand.draw"
+    ],
+    "S06-ROW071": [
+      "magic.deck_to_zone",
+      "magic.grave_to_zone",
+      "grave.to_magic"
+    ],
+    "S06-ROW072": [
+      "deploy.ignore_color",
+      "magic.grave_to_zone",
+      "magic.ignore_color",
+      "magic.zone_effect",
+      "grave.to_magic"
+    ],
+    "S06-ROW073": [
+      "magic.grave_to_zone",
+      "magic.add_colors",
+      "magic.zone_effect",
+      "grave.deck_to_grave",
+      "grave.to_magic",
+      "deck.self_mill"
+    ],
+    "S06-ROW074": [
+      "magic.grave_to_zone",
+      "magic.zone_effect",
+      "grave.to_magic"
+    ],
+    "S06-ROW075": [
+      "hand.draw"
+    ],
+    "S06-ROW076": [
+      "deploy.hand_to_field",
+      "hand.deck_to_hand",
+      "deck.conditional_to_hand",
+      "deck.shuffle"
+    ]
+  },
+  "basis": "IJINDEN set 1-6 / curated purpose taxonomy + conservative text/semantic matching",
+  "notes": [
+    "This file is a semantic search index and does not alter canonical card text.",
+    "Selected leaves in the same top category are OR; selections across top categories are AND.",
+    "Counts are candidate semantic matches and may be refined by later manual review."
+  ]
+}
