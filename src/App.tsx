@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import "./styles.css";
+import "./deck-library.css";
 import type { Card, CardDataset, CardType, DeckEntry } from "./types/card";
 import type {
   AbilityRelation,
@@ -8,7 +9,12 @@ import type {
   ReverseIndexDataset,
 } from "./types/semantic";
 import { CardDetail } from "./components/CardDetail";
-import { clearDeckStorage, loadDeck, saveDeck } from "./lib/storage";
+import {
+  createSavedDeck,
+  loadDeckLibrary,
+  saveDeckLibrary,
+  type SavedDeck,
+} from "./lib/storage";
 
 const COLORS = ["赤", "青", "緑", "黄", "紫", "無色"] as const;
 const TYPES: Array<"すべて" | CardType> = ["すべて", "イジン", "ハイケイ", "マホウ", "マリョク"];
@@ -25,7 +31,6 @@ const ABILITY_RELATION_MODES = [
 type AbilityRelationMode = (typeof ABILITY_RELATION_MODES)[number][0];
 type TraitRelationMode = "related" | "has" | "support" | "reference";
 type MovementOwner = "any" | "self" | "opponent";
-
 type MobileSection = "cards" | "deck";
 
 function useMediaQuery(query: string) {
@@ -154,7 +159,10 @@ export default function App() {
 
   const [filterDrawerOpen, setFilterDrawerOpen] = useState(false);
   const [selected, setSelected] = useState<Card | null>(null);
-  const [deck, setDeck] = useState<DeckEntry[]>(() => loadDeck());
+  const [libraryInitial] = useState(() => loadDeckLibrary());
+  const [savedDecks, setSavedDecks] = useState<SavedDeck[]>(libraryInitial.decks);
+  const [activeDeckId, setActiveDeckId] = useState(libraryInitial.activeDeckId);
+  const [deckLibraryOpen, setDeckLibraryOpen] = useState(false);
   const [notice, setNotice] = useState("");
   const [mobileSection, setMobileSection] = useState<MobileSection>("cards");
 
@@ -184,13 +192,23 @@ export default function App() {
       .catch((e) => setError(e instanceof Error ? e.message : String(e)));
   }, []);
 
-  useEffect(() => saveDeck(deck), [deck]);
+  useEffect(() => {
+    const active = savedDecks.find((deck) => deck.id === activeDeckId) ?? savedDecks[0];
+    if (!active) return;
+    saveDeckLibrary({ activeDeckId: active.id, decks: savedDecks });
+  }, [savedDecks, activeDeckId]);
+
   useEffect(() => {
     if (!compact) setFilterDrawerOpen(false);
   }, [compact]);
 
   const cards = dataset?.cards ?? [];
   const cardMap = useMemo(() => new Map(cards.map((card) => [card.id, card])), [cards]);
+  const activeDeck = useMemo(
+    () => savedDecks.find((deck) => deck.id === activeDeckId) ?? savedDecks[0],
+    [savedDecks, activeDeckId],
+  );
+  const deck = activeDeck?.entries ?? [];
 
   const traitFacets = useMemo(() => {
     if (!reverseIndex) return [] as Array<[string, number]>;
@@ -259,6 +277,11 @@ export default function App() {
     selectedAbilities.length +
     selectedLegacy.length +
     (moveFrom !== "すべて" || moveTo !== "すべて" ? 1 : 0);
+
+  function flashNotice(message: string) {
+    setNotice(message);
+    window.setTimeout(() => setNotice(""), 2200);
+  }
 
   function toggleValue(value: string, setter: React.Dispatch<React.SetStateAction<string[]>>) {
     setter((current) =>
@@ -385,6 +408,19 @@ export default function App() {
   const deckSize = deckCards.reduce((sum, item) => sum + item.count, 0);
   const deckKinds = deckCards.length;
 
+  function updateActiveDeckEntries(updater: (entries: DeckEntry[]) => DeckEntry[]) {
+    const deckId = activeDeck?.id;
+    if (!deckId) return;
+    const now = new Date().toISOString();
+    setSavedDecks((current) =>
+      current.map((savedDeck) =>
+        savedDeck.id === deckId
+          ? { ...savedDeck, entries: updater(savedDeck.entries), updatedAt: now }
+          : savedDeck,
+      ),
+    );
+  }
+
   function copiesByName(nameKey: string) {
     return deckCards
       .filter(({ card }) => card.deckRule.copyGroupKey === nameKey)
@@ -395,11 +431,10 @@ export default function App() {
     const currentNameCount = copiesByName(card.deckRule.copyGroupKey);
     const limit = card.deckRule.copyLimit;
     if (!card.deckRule.unlimitedCopies && limit != null && currentNameCount >= limit) {
-      setNotice(`「${card.name}」は同名合計${limit}枚までです。`);
-      window.setTimeout(() => setNotice(""), 2200);
+      flashNotice(`「${card.name}」は同名合計${limit}枚までです。`);
       return;
     }
-    setDeck((current) => {
+    updateActiveDeckEntries((current) => {
       const found = current.find((entry) => entry.cardId === card.id);
       return found
         ? current.map((entry) => entry.cardId === card.id ? { ...entry, count: entry.count + 1 } : entry)
@@ -408,7 +443,7 @@ export default function App() {
   }
 
   function removeCard(cardId: string) {
-    setDeck((current) =>
+    updateActiveDeckEntries((current) =>
       current
         .map((entry) => entry.cardId === cardId ? { ...entry, count: entry.count - 1 } : entry)
         .filter((entry) => entry.count > 0),
@@ -416,9 +451,112 @@ export default function App() {
   }
 
   function clearDeck() {
-    if (!window.confirm("デッキを空にしますか？")) return;
-    setDeck([]);
-    clearDeckStorage();
+    if (!window.confirm(`「${activeDeck?.name ?? "このデッキ"}」を空にしますか？`)) return;
+    updateActiveDeckEntries(() => []);
+  }
+
+  function saveCurrentDeck() {
+    if (!activeDeck) return;
+    saveDeckLibrary({ activeDeckId: activeDeck.id, decks: savedDecks });
+    flashNotice(`「${activeDeck.name}」を保存しました。`);
+  }
+
+  function nextDefaultDeckName() {
+    let index = savedDecks.length + 1;
+    while (savedDecks.some((deckItem) => deckItem.name === `マイデッキ ${index}`)) index += 1;
+    return `マイデッキ ${index}`;
+  }
+
+  function createNewDeck() {
+    const suggested = nextDefaultDeckName();
+    const name = window.prompt("新しいデッキ名", suggested)?.trim();
+    if (!name) return;
+    const newDeck = createSavedDeck(name);
+    setSavedDecks((current) => [...current, newDeck]);
+    setActiveDeckId(newDeck.id);
+    setDeckLibraryOpen(false);
+    setMobileSection("deck");
+    flashNotice(`「${newDeck.name}」を作成しました。`);
+  }
+
+  function openSavedDeck(deckId: string) {
+    const target = savedDecks.find((deckItem) => deckItem.id === deckId);
+    if (!target) return;
+    setActiveDeckId(deckId);
+    setDeckLibraryOpen(false);
+    setMobileSection("deck");
+    flashNotice(`「${target.name}」を読み出しました。`);
+  }
+
+  function renameSavedDeck(deckId: string) {
+    const target = savedDecks.find((deckItem) => deckItem.id === deckId);
+    if (!target) return;
+    const name = window.prompt("デッキ名を変更", target.name)?.trim();
+    if (!name || name === target.name) return;
+    const now = new Date().toISOString();
+    setSavedDecks((current) =>
+      current.map((deckItem) => deckItem.id === deckId ? { ...deckItem, name, updatedAt: now } : deckItem),
+    );
+  }
+
+  function duplicateSavedDeck(deckId: string) {
+    const source = savedDecks.find((deckItem) => deckItem.id === deckId);
+    if (!source) return;
+    const suggested = `${source.name} コピー`;
+    const name = window.prompt("複製するデッキ名", suggested)?.trim();
+    if (!name) return;
+    const copy = createSavedDeck(name, source.entries);
+    setSavedDecks((current) => [...current, copy]);
+    setActiveDeckId(copy.id);
+    setDeckLibraryOpen(false);
+    setMobileSection("deck");
+    flashNotice(`「${copy.name}」を複製しました。`);
+  }
+
+  function deleteSavedDeck(deckId: string) {
+    const target = savedDecks.find((deckItem) => deckItem.id === deckId);
+    if (!target) return;
+    if (!window.confirm(`「${target.name}」を削除しますか？`)) return;
+
+    let remaining = savedDecks.filter((deckItem) => deckItem.id !== deckId);
+    if (remaining.length === 0) {
+      remaining = [createSavedDeck("マイデッキ 1")];
+    }
+    setSavedDecks(remaining);
+    if (activeDeckId === deckId || !remaining.some((deckItem) => deckItem.id === activeDeckId)) {
+      setActiveDeckId(remaining[0].id);
+    }
+  }
+
+  function summarizeDeck(savedDeck: SavedDeck) {
+    const typeCounts: Record<CardType, number> = {
+      イジン: 0,
+      ハイケイ: 0,
+      マホウ: 0,
+      マリョク: 0,
+    };
+    const colorCounts = new Map<string, number>();
+    let total = 0;
+    let kinds = 0;
+
+    savedDeck.entries.forEach((entry) => {
+      const card = cardMap.get(entry.cardId);
+      if (!card) return;
+      total += entry.count;
+      kinds += 1;
+      typeCounts[card.type] += entry.count;
+      const cardColors = card.isColorless ? ["無色"] : card.colors;
+      cardColors.forEach((cardColor) =>
+        colorCounts.set(cardColor, (colorCounts.get(cardColor) ?? 0) + entry.count),
+      );
+    });
+
+    const colors = [...colorCounts.entries()]
+      .sort((a, b) => b[1] - a[1])
+      .map(([name, count]) => `${name} ${count}`)
+      .join(" / ");
+
+    return { total, kinds, typeCounts, colors };
   }
 
   const activeChips = useMemo(() => {
@@ -521,11 +659,65 @@ export default function App() {
   const deckPanel = (
     <aside className={`deck-panel ${mobile ? "mobile-deck" : ""}`}>
       <div className="deck-head">
-        <div><div className="eyebrow">MY DECK</div><h2>{deckKinds} 種類 / {deckSize} 枚</h2></div>
+        <div className="deck-head-main">
+          <div className="eyebrow">MY DECK</div>
+          <h2 className="deck-current-name">{activeDeck?.name ?? "マイデッキ"}</h2>
+          <div className="deck-count-line">{deckKinds} 種類 / {deckSize} 枚</div>
+        </div>
         <button className="ghost-button" onClick={clearDeck} disabled={deck.length === 0}>クリア</button>
+      </div>
+      <div className="deck-toolbar">
+        <button className="primary" type="button" onClick={saveCurrentDeck}>保存</button>
+        <button type="button" onClick={() => setDeckLibraryOpen(true)}>デッキ一覧 <b>{savedDecks.length}</b></button>
+        <button type="button" onClick={createNewDeck}>＋ 新規</button>
       </div>
       {deckCards.length === 0 ? <div className="empty-deck">カード一覧から「＋」を押すと、ここに追加されます。</div> : <div className="deck-list">{deckCards.map(({ card, count }) => <div className="deck-row" key={card.id}><button className="deck-card-name" onClick={() => setSelected(card)}><span>{card.name}</span><small>第{card.setNo}弾 / {card.sourceNo}</small></button><div className="deck-stepper"><button onClick={() => removeCard(card.id)}>－</button><strong>{count}</strong><button onClick={() => addCard(card)}>＋</button></div></div>)}</div>}
     </aside>
+  );
+
+  const deckLibrary = (
+    <div className="deck-library-backdrop" onMouseDown={(e) => { if (e.target === e.currentTarget) setDeckLibraryOpen(false); }}>
+      <section className="deck-library-modal">
+        <div className="deck-library-head">
+          <div><div className="eyebrow">DECK LIBRARY</div><h2>マイデッキ一覧</h2></div>
+          <div className="deck-library-head-actions">
+            <button className="ghost-button" type="button" onClick={createNewDeck}>＋ 新規</button>
+            <button className="icon-button" type="button" onClick={() => setDeckLibraryOpen(false)}>×</button>
+          </div>
+        </div>
+        <div className="deck-library-list">
+          {savedDecks.map((savedDeck) => {
+            const summary = summarizeDeck(savedDeck);
+            return (
+              <article className={`saved-deck-card ${savedDeck.id === activeDeck?.id ? "active" : ""}`} key={savedDeck.id}>
+                <div className="saved-deck-main">
+                  <button className="saved-deck-open" type="button" onClick={() => openSavedDeck(savedDeck.id)}>
+                    <div className="saved-deck-name-line">
+                      <span className="saved-deck-name">{savedDeck.name}</span>
+                      {savedDeck.id === activeDeck?.id && <span className="saved-deck-active-badge">編集中</span>}
+                    </div>
+                    <div className="saved-deck-meta"><span><strong>{summary.total}</strong> 枚</span><span>{summary.kinds} 種類</span></div>
+                    <div className="saved-deck-breakdown">
+                      <span>イジン {summary.typeCounts.イジン}</span>
+                      <span>ハイケイ {summary.typeCounts.ハイケイ}</span>
+                      <span>マホウ {summary.typeCounts.マホウ}</span>
+                      <span>マリョク {summary.typeCounts.マリョク}</span>
+                    </div>
+                    {summary.colors && <div className="saved-deck-colors">色：{summary.colors}</div>}
+                  </button>
+                  <div className="saved-deck-actions">
+                    <button type="button" onClick={() => openSavedDeck(savedDeck.id)}>開く</button>
+                    <button type="button" onClick={() => renameSavedDeck(savedDeck.id)}>名前変更</button>
+                    <button type="button" onClick={() => duplicateSavedDeck(savedDeck.id)}>複製</button>
+                    <button className="danger" type="button" onClick={() => deleteSavedDeck(savedDeck.id)}>削除</button>
+                  </div>
+                </div>
+              </article>
+            );
+          })}
+        </div>
+      </section>
+    </div>
   );
 
   if (error) return <main className="error-screen"><div><h1>読み込みエラー</h1><p>{error}</p></div></main>;
@@ -534,7 +726,7 @@ export default function App() {
   return (
     <div className="app-shell">
       <header className="topbar">
-        <div><div className="eyebrow">IJINDEN DECK BUILDER v0.3</div><h1>イジンデン デッキビルダー</h1></div>
+        <div><div className="eyebrow">IJINDEN DECK BUILDER v0.5</div><h1>イジンデン デッキビルダー</h1></div>
         <div className="top-stats"><span>全 <strong>{dataset.recordCount}</strong> 種類</span><span>表示 <strong>{filtered.length}</strong></span><span>デッキ <strong>{deckSize}</strong> 枚</span></div>
       </header>
 
@@ -574,6 +766,8 @@ export default function App() {
       </div>
 
       {compact && filterDrawerOpen && <div className="drawer-backdrop" onMouseDown={(e) => { if (e.target === e.currentTarget) setFilterDrawerOpen(false); }}><div className="filter-drawer">{filterPanel}</div></div>}
+
+      {deckLibraryOpen && deckLibrary}
 
       {mobile && <nav className="mobile-bottom-nav"><button className={mobileSection === "cards" ? "active" : ""} onClick={() => setMobileSection("cards")}><span>⌕</span>カード検索</button><button className={mobileSection === "deck" ? "active" : ""} onClick={() => setMobileSection("deck")}><span>▣</span>デッキ <b>{deckSize}</b></button></nav>}
 
