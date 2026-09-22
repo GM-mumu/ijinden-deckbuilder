@@ -1,3 +1,5 @@
+.catalog-toolbar { grid-template-columns: minmax(0, 1fr) auto auto; }
+
 .sort-open-button {
   border: 1px solid #35404e;
   color: #d2d9e3;
