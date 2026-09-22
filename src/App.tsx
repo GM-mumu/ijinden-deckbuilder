@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import "./styles.css";
 import "./deck-library.css";
+import "./sort-controls.css";
 import type { Card, CardDataset, CardType, DeckEntry } from "./types/card";
 import type {
   AbilityRelation,
@@ -9,6 +10,14 @@ import type {
   ReverseIndexDataset,
 } from "./types/semantic";
 import { CardDetail } from "./components/CardDetail";
+import { SortControls } from "./components/SortControls";
+import {
+  DEFAULT_SORT_DIRECTIONS,
+  sortCards,
+  type SortDirection,
+  type SortDirections,
+  type SortKey,
+} from "./lib/cardSort";
 import {
   createSavedDeck,
   loadDeckLibrary,
@@ -146,6 +155,8 @@ export default function App() {
   const [type, setType] = useState<"すべて" | CardType>("すべて");
   const [color, setColor] = useState<string>("すべて");
   const [maxLevel, setMaxLevel] = useState<string>("すべて");
+  const [sortOpen, setSortOpen] = useState(false);
+  const [sortDirections, setSortDirections] = useState<SortDirections>({ ...DEFAULT_SORT_DIRECTIONS });
 
   const [selectedPurpose, setSelectedPurpose] = useState<string[]>([]);
   const [selectedTraits, setSelectedTraits] = useState<string[]>([]);
@@ -278,6 +289,8 @@ export default function App() {
     selectedLegacy.length +
     (moveFrom !== "すべて" || moveTo !== "すべて" ? 1 : 0);
 
+  const activeSortCount = Object.values(sortDirections).filter((direction) => direction !== "none").length;
+
   function flashNotice(message: string) {
     setNotice(message);
     window.setTimeout(() => setNotice(""), 2200);
@@ -287,6 +300,14 @@ export default function App() {
     setter((current) =>
       current.includes(value) ? current.filter((item) => item !== value) : [...current, value],
     );
+  }
+
+  function changeSortDirection(key: SortKey, direction: SortDirection) {
+    setSortDirections((current) => ({ ...current, [key]: direction }));
+  }
+
+  function clearSortDirections() {
+    setSortDirections({ ...DEFAULT_SORT_DIRECTIONS });
   }
 
   function clearSemanticFilters() {
@@ -393,6 +414,11 @@ export default function App() {
     moveTo,
     moveOwner,
   ]);
+
+  const sortedCards = useMemo(
+    () => sortCards(filtered, sortDirections),
+    [filtered, sortDirections],
+  );
 
   const deckCards = useMemo(
     () =>
@@ -726,7 +752,7 @@ export default function App() {
   return (
     <div className="app-shell">
       <header className="topbar">
-        <div><div className="eyebrow">IJINDEN DECK BUILDER v0.5</div><h1>イジンデン デッキビルダー</h1></div>
+        <div><div className="eyebrow">IJINDEN DECK BUILDER v0.6</div><h1>イジンデン デッキビルダー</h1></div>
         <div className="top-stats"><span>全 <strong>{dataset.recordCount}</strong> 種類</span><span>表示 <strong>{filtered.length}</strong></span><span>デッキ <strong>{deckSize}</strong> 枚</span></div>
       </header>
 
@@ -737,15 +763,30 @@ export default function App() {
           <main className="catalog-panel">
             <div className="catalog-toolbar">
               <input className="search" value={query} onChange={(e) => setQuery(e.target.value)} placeholder="カード名・能力・特性を検索" />
+              <button
+                className={`sort-open-button ${activeSortCount > 0 ? "active" : ""}`}
+                type="button"
+                onClick={() => setSortOpen((current) => !current)}
+              >
+                ↕ 並び {activeSortCount > 0 && <b>{activeSortCount}</b>}
+              </button>
               {compact && <button className={`filter-open-button ${reverseConditionCount > 0 ? "active" : ""}`} type="button" onClick={() => setFilterDrawerOpen(true)}>☰ 条件 {reverseConditionCount > 0 && <b>{reverseConditionCount}</b>}</button>}
             </div>
+
+            {sortOpen && (
+              <SortControls
+                directions={sortDirections}
+                onChange={changeSortDirection}
+                onClear={clearSortDirections}
+              />
+            )}
 
             {activeChips.length > 0 && <div className="active-filter-strip"><span>現在の条件</span><div className="active-chips">{activeChips.map((chip) => <button type="button" key={chip.id} onClick={chip.clear}>{chip.label}<b>×</b></button>)}</div><button className="link-button" type="button" onClick={clearAllFilters}>すべて解除</button></div>}
 
             <div className="result-summary">表示中 <strong>{filtered.length}</strong> 種類 <span>/ 全 {dataset.recordCount} 種類</span></div>
 
             <section className="card-list">
-              {filtered.map((card) => {
+              {sortedCards.map((card) => {
                 const sameNameCount = copiesByName(card.deckRule.copyGroupKey);
                 return <article className={`card-row ${colorClass(card)}`} key={card.id}>
                   <button className="card-main" onClick={() => setSelected(card)}>
