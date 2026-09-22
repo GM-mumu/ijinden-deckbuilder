@@ -1,0 +1,45 @@
+.deck-head-main { min-width: 0; }
+.deck-current-name { margin: 3px 0 2px; font-size: 18px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.deck-count-line { color: #8e99a9; font-size: 11px; margin-top: 3px; }
+.deck-toolbar { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; padding: 10px 0 4px; }
+.deck-toolbar button { min-height: 36px; border: 1px solid #343d4b; background: #19202a; color: #dbe3ee; border-radius: 8px; padding: 7px 8px; font-size: 11px; font-weight: 700; }
+.deck-toolbar button:hover { border-color: #53657c; background: #202a37; }
+.deck-toolbar button.primary { background: #405674; border-color: #607c9f; color: white; }
+.deck-toolbar button b { margin-left: 4px; color: #aebbd0; }
+
+.deck-library-backdrop { position: fixed; inset: 0; z-index: 95; background: rgba(3,5,8,.78); display: grid; place-items: center; padding: 22px; }
+.deck-library-modal { width: min(820px, 100%); max-height: 88vh; overflow: hidden; display: flex; flex-direction: column; background: #131821; border: 1px solid #3a4453; border-radius: 14px; box-shadow: 0 26px 80px rgba(0,0,0,.48); }
+.deck-library-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 16px 18px; border-bottom: 1px solid #2d3541; }
+.deck-library-head h2 { margin: 3px 0 0; font-size: 20px; }
+.deck-library-head-actions { display: flex; gap: 7px; }
+.deck-library-list { overflow-y: auto; padding: 12px; display: grid; gap: 9px; }
+.saved-deck-card { border: 1px solid #2d3541; background: #181e27; border-radius: 11px; padding: 10px; }
+.saved-deck-card.active { border-color: #6680a4; box-shadow: inset 0 0 0 1px #3d526f; background: #1c2531; }
+.saved-deck-main { display: grid; grid-template-columns: minmax(0,1fr) auto; gap: 12px; align-items: start; }
+.saved-deck-open { min-width: 0; border: 0; background: transparent; color: inherit; text-align: left; padding: 1px; }
+.saved-deck-name-line { display: flex; align-items: center; gap: 7px; flex-wrap: wrap; }
+.saved-deck-name { font-size: 16px; font-weight: 800; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 100%; }
+.saved-deck-active-badge { font-size: 9px; border: 1px solid #657f9f; background: #354a66; color: #edf5ff; border-radius: 999px; padding: 2px 6px; }
+.saved-deck-meta { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 5px; color: #8d99aa; font-size: 11px; }
+.saved-deck-meta strong { color: #eef3f9; }
+.saved-deck-breakdown { margin-top: 8px; display: flex; gap: 6px; flex-wrap: wrap; }
+.saved-deck-breakdown span { font-size: 10px; color: #bdc6d3; background: #222a35; border: 1px solid #303a48; border-radius: 999px; padding: 3px 7px; }
+.saved-deck-colors { margin-top: 7px; color: #8490a1; font-size: 10px; line-height: 1.6; }
+.saved-deck-actions { display: flex; gap: 5px; flex-wrap: wrap; justify-content: flex-end; }
+.saved-deck-actions button { border: 1px solid #384352; background: #222a35; color: #d3dbe6; border-radius: 7px; padding: 6px 8px; font-size: 10px; white-space: nowrap; }
+.saved-deck-actions button:hover { border-color: #53657a; }
+.saved-deck-actions .danger { color: #e8b3b3; border-color: #5b3c42; }
+.deck-library-empty { color: #8290a3; text-align: center; padding: 32px 16px; }
+
+@media (max-width: 760px) {
+  .deck-toolbar { position: sticky; top: 64px; z-index: 5; background: #10141b; padding: 9px 0 8px; }
+  .deck-toolbar button { min-height: 42px; font-size: 11px; }
+  .deck-library-backdrop { padding: 0; align-items: stretch; }
+  .deck-library-modal { width: 100%; max-height: 100vh; min-height: 100vh; border: 0; border-radius: 0; padding-bottom: calc(70px + env(safe-area-inset-bottom)); }
+  .deck-library-head { padding: 13px 12px; position: sticky; top: 0; background: #131821; z-index: 2; }
+  .deck-library-head h2 { font-size: 18px; }
+  .deck-library-list { padding: 9px 8px; }
+  .saved-deck-main { grid-template-columns: 1fr; }
+  .saved-deck-actions { justify-content: flex-start; border-top: 1px solid #2a323e; padding-top: 8px; margin-top: 8px; }
+  .saved-deck-actions button { min-height: 36px; padding: 7px 10px; }
+}
