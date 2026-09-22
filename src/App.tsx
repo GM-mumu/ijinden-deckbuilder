@@ -697,7 +697,7 @@ export default function App() {
         <button type="button" onClick={() => setDeckLibraryOpen(true)}>デッキ一覧 <b>{savedDecks.length}</b></button>
         <button type="button" onClick={createNewDeck}>＋ 新規</button>
       </div>
-      {deckCards.length === 0 ? <div className="empty-deck">カード一覧から「＋」を押すと、ここに追加されます。</div> : <div className="deck-list">{deckCards.map(({ card, count }) => <div className="deck-row" key={card.id}><button className="deck-card-name" onClick={() => setSelected(card)}><span>{card.name}</span><small>第{card.setNo}弾 / {card.sourceNo}</small></button><div className="deck-stepper"><button onClick={() => removeCard(card.id)}>－</button><strong>{count}</strong><button onClick={() => addCard(card)}>＋</button></div></div>)}</div>}
+      {deckCards.length === 0 ? <div className="empty-deck">カード一覧から「＋」を押すと、ここに追加されます。</div> : <div className="deck-list">{deckCards.map(({ card, count }) => <div className="deck-row" key={card.id}><button className="deck-card-name" onClick={() => setSelected(card)}><span>{card.name}</span><small>第{card.setNo}弾 / {card.sourceNo} / レアリティ {card.rarity ?? "-"} / Lv {card.level ?? "-"}{card.type === "マホウ" && <> / 魔力Cost {card.magicCost ?? 0}</>}</small></button><div className="deck-stepper"><button onClick={() => removeCard(card.id)}>－</button><strong>{count}</strong><button onClick={() => addCard(card)}>＋</button></div></div>)}</div>}
     </aside>
   );
 
@@ -791,7 +791,7 @@ export default function App() {
                 return <article className={`card-row ${colorClass(card)}`} key={card.id}>
                   <button className="card-main" onClick={() => setSelected(card)}>
                     <div className="card-title-line"><span className="card-name">{card.name}</span><span className="badge">{card.type}</span><span className="badge">{displayColor(card)}</span></div>
-                    <div className="card-meta">第{card.setNo}弾 / {card.sourceNo}<span>Lv {card.level ?? "-"}</span>{card.power != null && <span>Power {card.power}</span>}{card.type === "マホウ" && <span>魔力Cost {card.magicCost ?? 0}</span>}</div>
+                    <div className="card-meta">第{card.setNo}弾 / {card.sourceNo}<span>レアリティ {card.rarity ?? "-"}</span><span>Lv {card.level ?? "-"}</span>{card.power != null && <span>Power {card.power}</span>}{card.type === "マホウ" && <span>魔力Cost {card.magicCost ?? 0}</span>}</div>
                     {card.ruleTextSearch && <div className="card-text-preview">{card.ruleTextSearch}</div>}
                   </button>
                   <div className="card-actions"><div className="copies">{card.deckRule.unlimitedCopies ? "∞" : `${sameNameCount}/4`}</div><button className="add-button" onClick={() => addCard(card)}>＋</button></div>
